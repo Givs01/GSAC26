@@ -1,6 +1,6 @@
 export function loadHome() {
     // Fetch data from the external JSON file
-    return fetch('https://script.google.com/macros/s/AKfycbwY1BXy6ZCFUYGYRa76hYopJ1bkKEUMRILeWZ4Q-uipPzzGwJ4uozTjzqIvQYD5pSuYPQ/exec')
+    return fetch('https://script.google.com/macros/s/AKfycbzgoXOpkApwFa2UFlit2Kkm9_P9l2CcEZbZCiLLZY3kjIoRA5hmcbAr_Q94dEidpJZ_0Q/exec')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Please wait..and reload the page.');

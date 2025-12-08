@@ -1,5 +1,5 @@
 export function loadProgramme() {
-    return fetch('https://script.google.com/macros/s/AKfycbxQMY0Yb7VfC9I4ddAb6S1KA6WQ2xTc9xcSVlA0SwXUeOhkkpuO1RyNcVsk_ivoSNFI2w/exec')
+    return fetch('https://script.google.com/macros/s/AKfycbzgoXOpkApwFa2UFlit2Kkm9_P9l2CcEZbZCiLLZY3kjIoRA5hmcbAr_Q94dEidpJZ_0Q/exec')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Failed to load programme data.');
