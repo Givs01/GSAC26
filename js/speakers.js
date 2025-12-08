@@ -1,5 +1,5 @@
 export function loadSpeakers() {
-    return fetch('https://script.google.com/macros/s/AKfycbzgoXOpkApwFa2UFlit2Kkm9_P9l2CcEZbZCiLLZY3kjIoRA5hmcbAr_Q94dEidpJZ_0Q/exec')
+    return fetch('https://script.google.com/macros/s/AKfycbzx0238_k60cEv0bxNJ8mDK78Dbc0-9DmkF4rnaFZgbwINhVfnZzkEbCnRFq8NzbLCYNw/exec')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Failed to load speaker data.');
