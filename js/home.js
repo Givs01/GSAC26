@@ -93,22 +93,6 @@ export function loadHome() {
                 
                 ${generateThemesSection()}
 
-                <div class="ribbon">
-                    <p>Celebrating PAS@15</p>
-                </div>
-
-                <section class="home">
-                    <div class="buttons" style="display: flex; flex-direction: row; align-items: flex-start; margin: 0; padding: 0;">
-                        <img class="imgbox" src="images/pas15logo.jpg" alt="PAS Logo" onerror="this.onerror=null; this.src='default-image.png'" style="margin: 0; padding: 0;">
-                        <p style="margin:0 0 0 10px; font-size: 0.8rem;">
-                            Learn more about the PAS Project, please visit CWAS website or click the button below to explore - 
-                            <a href="https://cwas.org.in/cwas-resources/performance-assessment-system-for-urban-water-supply-and-sanitation" target="_blank" class="button" style="display: inline-block; background-color: var(--primary-color); color: #fff; width: 80px; font-size: 0.6rem; padding: 2px;">PAS Project</a>
-                        </p>
-                    </div>
-                    <p style="margin-top:5px;">
-                        CWAS has been working on urban water and sanitation related action research since 2009. CWAS began its work when CEPT University received a grant from the Gates Foundation for Performance Assessment System (PAS) Project. Over the past decade, the project has developed an online system, methods, and processes for performance assessment and improvement for urban water supply and sanitation in India. In 2009, this system was initiated in 400+ cities in two states of India. Over these years, the PAS system has been used by 900+ Indian cities across six states and SMART cities. PAS system has the repository of 1800+ cities and it is one of the largest Urban Water and Sanitation database in India which is used by various governments and institutions.
-                    </p>
-                </section>
             `;
             return htmlContent;
         })
