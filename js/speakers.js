@@ -69,7 +69,7 @@ export function loadSpeakers() {
                         </div>
                             <section class="profcard" id="${speaker.ID}" onclick="openSpeakerProfile('${speaker.ID}')">
                                 <div class="bands">
-                                    <img src="${speaker.FullPath || 'default-image.png'}" alt="${speaker.Name}" onerror="this.onerror=null; this.src='/images/photo.jpg'">
+                                    <img src="${speaker.FullPath || 'default-image.png'}" onerror="this.onerror=null; this.src='/images/photo.jpg'">
                                     <div class="content-box-b">
                                         <h3>${speaker.Name}</h3>
                                         <h4 style="font-style: italic; font-weight: normal">${speaker.Designation || "-"}</h4>
@@ -238,7 +238,7 @@ window.openSpeakerProfile = function(speakerID) {
 
     modalBody.innerHTML = `
         <div class="band">
-            <img src="${speaker.querySelector('img').src}" alt="${speaker.querySelector('h3').textContent}" >
+            <img src="${speaker.querySelector('img').src || 'default-image.png'}" onerror="this.onerror=null; this.src='/images/photo.jpg'">
             <div class="band2">
                 <h2>${speaker.querySelector('h3').textContent}</h2>
                 <p style="font-style: italic; font-weight: normal">${speaker.querySelector('h4:nth-of-type(1)').textContent}</p>
