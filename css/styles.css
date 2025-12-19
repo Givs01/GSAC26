@@ -556,15 +556,15 @@ main h2 {
 }
 
 .bands img {
-    width: 90px;  /* Set image width to 80px */
-    height: 90px; /* Set image height to 80px */
+    width: 75px;  
+    height: 75px; 
     align-items: center;
-    object-fit: cover;  /* Ensures the image is cropped around the center */
+    object-fit: cover;  
     border: 0.5px solid var(--primary-color);
-    border-left: 3.5px solid var(--primary-color);
-    border-radius: 10px;
+    border-bottom: 3.5px solid var(--primary-color);
+    border-radius: 50%;
     padding: 1px;
-    transition: transform 0.3s ease; /* Smooth image zoom effect */
+    transition: transform 0.3s ease; 
 }
 .profcard > div {
     padding: 0px;
@@ -717,14 +717,17 @@ hr {
 
 /* Profile image styles */
 .profile img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 20px;
-    margin-top: 20px;
-    padding: 0;
-    border-left: 10px solid var(--primary-color);
+    width: 75px;  
+    height: 75px; 
+    align-items: center;
+    object-fit: cover;  
+    border: 0.5px solid var(--primary-color);
+    border-bottom: 3.5px solid var(--primary-color);
+    border-radius: 50%;
+    padding: 1px;
+    transition: transform 0.3s ease; 
 }
+
 
 
 /* Header styles for speaker name and designation */
@@ -1175,6 +1178,7 @@ iframe {
     background-color: rgba(141, 141, 141, 0.1);
     border-radius: 10px;
     align-items: center;
+    padding-left: 20px;
 }
 .band2 {
     padding: 20px;
@@ -1187,14 +1191,15 @@ iframe {
 
 /* Styling for the image inside the modal body */
 .band img {
-    margin: 10px;
-    width: 100px;
-    height: 100px;
-    border: 2px solid var(--primary-color);
-    border-radius: 20px;
-    border-right: 10px solid var(--primary-color);
-    margin-bottom: 10px;
-    object-fit: cover;
+    width: 75px;  
+    height: 75px; 
+    align-items: center;
+    object-fit: cover;  
+    border: 0.5px solid var(--primary-color);
+    border-bottom: 3.5px solid var(--primary-color);
+    border-radius: 50%;
+    padding: 1px;
+    transition: transform 0.3s ease; 
 }
 
 /* Header styling inside modal body */
