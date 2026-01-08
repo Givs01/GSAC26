@@ -24,7 +24,7 @@ export function loadHome() {
                     <p>${general.date || ''}</p>
                     <p>${general.venue || ''}</p>
                     <div class="buttons">  
-                        <a href="${general.registration_link || '#'}" target="_blank" class="button">Register here</a>
+                        <a href="${general.registration_link || '#'}" target="_blank" class="button">Register</a>
                     </div>
                 </section>
                 
