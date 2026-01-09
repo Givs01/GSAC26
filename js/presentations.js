@@ -1,5 +1,5 @@
 export function loadPresentations() {
-    return fetch('https://script.google.com/macros/s/AKfycbzx0238_k60cEv0bxNJ8mDK78Dbc0-9DmkF4rnaFZgbwINhVfnZzkEbCnRFq8NzbLCYNw/exec')
+    return fetch('./data.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Failed to load presentations data.');
