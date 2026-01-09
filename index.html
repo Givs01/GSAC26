@@ -2,60 +2,103 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui, viewport-fit=cover">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>GSAC</title>
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#ffffffff">
+
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="GSAC">
+    <link rel="apple-touch-icon" href="/icons/icon-192.png">
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
-    <div id="app">
-        <header>
-            <ul>
-                <div class="top">
-                    <li> Global South Academic Conclave</li>
-                    <p style="font-size: 0.8rem;">WASH and Climate</p> 
-                </div>
-            </ul>
-        </header>
-        
-        <main id="content">
-            <canvas id="container"></canvas>
-            <div id = "loader" class="loader"></div>
-        </main>
-        <footer id="navigation-footer">
-            <ul>
-                <button data-section="home" class="active">
-                    <i class="fas fa-home"></i>
-                    <span>Home</span>
-                </button>
-                <button data-section="programme">
-                    <i class="fas fa-calendar-alt"></i>
-                    <span>Programme</span>
-                </button>
-                <button data-section="speakers">
-                    <i class="fas fa-user-group"></i>
-                    <span>Speakers</span>
-                </button>
-                <button data-section="presentations">
-                    <i class="fas fa-file-alt"></i>
-                    <span>Presentations</span>
-                </button>
-                <button data-section="venue">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Venue</span>
-                </button>
-            </ul>
-        </footer>
+<div id="app">
+    <header>
+        <ul>
+            <div class="top">
+                <li>Global South Academic Conclave</li>
+                <p style="font-size: 0.8rem;">WASH and Climate</p>
+            </div>
+        </ul>
+    </header>
+    
+    <!-- Install Banner -->
+<div id="install-banner" class="hidden">
+    <div class="banner-container">
+        <button id="install-close">&times;</button>
+        <span>Take the Conclave With You</span>
+        <p style="font-size: 0.8rem; color: #666; margin: 0;">Install the app for a faster experience and seamless access to session updates throughout the event.</p>
+        <button id="install-btn">Install</button>
     </div>
-    <!-- Google tag (gtag.js) -->
+</div>
+    
+    <main id="content">
+        <canvas id="container"></canvas>
+        <div id="loader" class="loader"></div>
+    </main>
+
+
+    <footer id="navigation-footer">
+        <ul>
+            <button data-section="home" class="active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </button>
+
+            <button data-section="programme">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Programme</span>
+            </button>
+
+            <button data-section="speakers">
+                <i class="fas fa-user-group"></i>
+                <span>Speakers</span>
+            </button>
+
+            <button data-section="presentations">
+                <i class="fas fa-file-alt"></i>
+                <span>Presentations</span>
+            </button>
+
+            <button data-section="venue">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Venue</span>
+            </button>
+        </ul>
+    </footer>
+
+</div>
+
+<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3R2JJ9B09D"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-3R2JJ9B09D');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-3R2JJ9B09D');
 </script>
-    <script type="module" src="js/app.js"></script>
+
+<script type="module" src="js/app.js"></script>
+
+<!-- Service Worker -->
+<script>
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker.register("/sw.js");
+    });
+}
+</script>
+
 </body>
 </html>

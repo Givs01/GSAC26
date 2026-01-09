@@ -17,6 +17,7 @@ export function loadHome() {
 
             // HTML content generation
             const htmlContent = `
+            
                 <section class="bghead">
                     <p>${general.greeting || ''}</p>
                     <h1>${general.name || ''}</h1>
