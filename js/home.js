@@ -28,6 +28,7 @@ export function loadHome() {
                     </div>
                 </section>
                 
+                
                 <section class="home">
                     <p>${general.description1 || ''}</p>
                     <p>${general.description2 || ''}</p>
