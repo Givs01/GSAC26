@@ -510,6 +510,15 @@ main h2 {
 
 }
 
+.card.speaker-row {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+}
+
+
 .home .star {
     text-align: right;
     align-items: flex-start;
@@ -843,10 +852,62 @@ hr {
     border-radius: 10px;
 }
 
-.nav-button.active {
-    background-color: var(--primary-color-hover); /* Highlight color */
-    color: #f0f0f0;
-    border: 2px solid var(--primary-color-hover);
+/* Base style for navigation buttons */
+.nav-button {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-size: 10px;
+    color: gray;
+    max-width: 150px;
+    width: 150px;
+    padding: 5px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: 
+        background-color 0.3s ease, 
+        color 0.3s ease, 
+        box-shadow 0.2s ease,
+        transform 0.1s ease; /* smoother press effect */
+}
+
+/* Icon spacing and color */
+.nav-button i {
+    margin-right: 5px;
+    font-size: 0.8rem;
+    color: gray;
+    transition: color 0.3s ease;
+}
+/* Hover state */
+.nav-button:hover,
+.nav-button:focus {
+    background-color: var(--primary-color-hover);
+    color: white;
+}
+
+.nav-button:hover i,
+.nav-button:focus i {
+    color: white;
+}
+
+
+/* Active / pressing state */
+.nav-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    background-color: var(--primary-color-hover);
+    color: white;
+}
+/* Active / pressing state */
+.nav-button:active i{
+    transform: scale(0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    background-color: var(--primary-color-hover);
+    color: white;
 }
 
 
@@ -920,64 +981,18 @@ hr {
 
 /* Style for the navigation panel */
 .navigation-panel {
-    padding: 5px;
+    padding: 10px;
+    gap: 10px;
     margin: auto;
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
     align-items: center;
     background-color: #01A3BA;
-    max-width: 100%; 
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
     z-index: 99;
 }
 
-/* Style for the navigation buttons */
-.nav-button {
-    width: 30%;   
-    margin: 3px;              
-    height: 30px;             
-    padding: 0 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    background-color: #f0f0f0;
-    cursor: pointer;
-    font-size: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-    max-width: 150px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-}
-
-
-.nav-button i {
-    margin-right: 5px;
-    font-size: 0.8rem;
-    color: gray;
-}
-
-.nav-button span {
-    display: inline-block;
-    color: gray;
-}
-
-
-.nav-button:hover {
-    background-color: var(--primary-color-hover);
-    color: white;
-}
-
-
-.nav-button:hover i {
-    color: white; 
-}
-
-
-.nav-button:hover span {
-    color: white; 
-}
 
 #scrollToTop {
     position: fixed;
@@ -1022,6 +1037,16 @@ hr {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.session-card_a {
+    font-size: 0.7rem;
+    flex-direction: column;
+    align-items: left;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 .session-time {
     width: 70px;
     height: 80%;
@@ -1418,6 +1443,12 @@ iframe {
     border: none;
     font-size: 1.2rem;
     cursor: pointer;
+}
+
+.session {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
 }
 
 @media screen and (min-width: 600px) {

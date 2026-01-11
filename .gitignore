@@ -16,5 +16,4 @@ Thumbs.db
 venv/
 
 # Ignore data file
-admin.py
-
+config.json

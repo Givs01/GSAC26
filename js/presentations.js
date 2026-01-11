@@ -90,7 +90,7 @@ export function loadPresentations() {
             `;
             
             const categoryButtons = Object.keys(groupedByCategory).map(category => {
-                let icon = "<i class='fas fa-file'></i>";
+                let icon = "<i class='fas fa-rectangle-list'></i>";
                 if (category.toLowerCase() === "verbal presentation") {
                     icon = "<i class='fas fa-microphone-alt'></i>";
                 }

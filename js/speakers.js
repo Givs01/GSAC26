@@ -26,18 +26,28 @@ export function loadSpeakers() {
             </section>
             `;
 
-            const categoryIcons = {
-                "Chair": "fa-user-tie",               
-                "Keynote Speaker": "fa-microphone-alt", 
-                "Panelist": "fa-users",               
-                "Poster Presenter": "fa-file-alt",        
-                "Other": "fa-user",         
+            const getCategoryIcon = (category) => {
+                const c = category.toLowerCase();
+
+                if (c.includes('keynote')) return 'fa-user';
+                if (c.includes('inaugural') || c.includes('opening')) return 'fa-bell';
+                if (c.includes('chair')) return 'fa-user-tie';
+                if (c.includes('panel')) return 'fa-users';
+                if (c.includes('verbal') || c.includes('oral')) return 'fa-microphone';
+                if (c.includes('poster')) return 'fa-rectangle-list';
+                if (c.includes('speaker')) return 'fa-microphone';
+                if (c.includes('presenter')) return 'fa-user';
+
+                return 'fa-user';
             };
+
+
             
             const navButtons = Object.keys(groupedSpeakers)
             .filter(category => category !== 'Search') 
             .map(category => {
-                const iconClass = categoryIcons[category] || 'fa-tag'; 
+                const iconClass = getCategoryIcon(category);
+
                 if (category === 'Other' && !groupedSpeakers[category]?.length) {
                     return ''; 
                 }
@@ -73,10 +83,9 @@ export function loadSpeakers() {
 
                                     <div class="content-box-b">
                                         <h3>${speaker.Name}</h3>
-                                        <h4 style="font-style: italic; font-weight: normal">${speaker.Designation || "-"}</h4>
-                                        <h4>${speaker.Organization || "-"}</h4>
+                                        <h4 style="font-weight: normal;">${speaker.Designation || ""} | ${speaker.Organization || ""}</h4>
                                         <p style ="display:none"> ${speaker.Bio || "No biography available."} </p>
-                                        <h5>${getSessions(speaker.SessionTitle, speaker.Day, speaker.Time, speaker.Venue)} </h5>
+                                        <h5>${getSessions(speaker.SessionTitle, speaker.Topic, speaker.Day, speaker.Time, speaker.Venue)} </h5>
                                     </div>
                                 </div>
                             </section>
@@ -103,48 +112,57 @@ export function loadSpeakers() {
 
 
 function groupSpeakersByCategory(speakers) {
-    const customCategoryOrder = [
-        "Keynote Speaker",
-        "Inaugural",
-        "Panelist",
-        "Chair",
-        "Verbal Presenter", 
-        "Poster Presenter", 
-    ];
 
-    // Group speakers by category
+    // Normalize category names safely
+    const normalize = (cat) => (cat || 'Other').trim();
+
+    // Group speakers by ParticipantCatagory
     const grouped = speakers.reduce((acc, speaker) => {
-        const category = speaker.ParticipantCatagory || 'Other';
-        if (!acc[category]) {
-            acc[category] = [];
-        }
+        const category = normalize(speaker.ParticipantCatagory);
+        if (!acc[category]) acc[category] = [];
         acc[category].push(speaker);
         return acc;
     }, {});
 
-    // Get all unique categories and combine custom ones with others
-    const groupedCategories = Object.keys(grouped);
-    
-    // Sort predefined categories first
-    const sortedCategories = customCategoryOrder.concat(
-        groupedCategories.filter(category => !customCategoryOrder.includes(category))
-            .sort() // Sort any new categories alphabetically
-    );
+    const categories = Object.keys(grouped);
 
+    // Explicit priority buckets
+    const keynote = categories.filter(c => c.toLowerCase().includes('keynote'));
+    const inaugural = categories.filter(c => c.toLowerCase().includes('inaugural'));
+    const panelist = categories.filter(c => c.toLowerCase().includes('panelist'));
+    const verbal = categories.filter(c => c.toLowerCase().includes('verbal'));
+    const poster = categories.filter(c => c.toLowerCase().includes('poster'));
+
+    // Everything else → alphabetical
+    const middle = categories.filter(c =>
+        !keynote.includes(c) &&
+        !inaugural.includes(c) &&
+        !verbal.includes(c) &&
+        !poster.includes(c)
+    ).sort((a, b) => a.localeCompare(b));
+
+    // Final ordered category list
+    const sortedCategories = [
+        ...keynote,
+        ...inaugural,
+        ...panelist,
+        ...middle,
+        ...verbal,
+        ...poster
+    ];
+
+    // Sort speakers inside each category
     const sortedGrouped = sortedCategories.reduce((acc, category) => {
-        // Sort speakers in the category by serial number first, then alphabetically
-        grouped[category]?.sort((a, b) => {
-            const serialA = a.SerialNumber ? parseInt(a.SerialNumber, 10) : Infinity; // Fallback to Infinity if SerialNumber is not available
-            const serialB = b.SerialNumber ? parseInt(b.SerialNumber, 10) : Infinity; // Same for b
 
-            if (serialA !== serialB) {
-                return serialA - serialB; // Sort by serial number if both exist
-            } else {
-                return a.Name.localeCompare(b.Name); // If serial numbers are the same or missing, fallback to alphabetically
-            }
+        grouped[category].sort((a, b) => {
+            const sa = a.SerialNumber ? parseInt(a.SerialNumber, 10) : Infinity;
+            const sb = b.SerialNumber ? parseInt(b.SerialNumber, 10) : Infinity;
+
+            if (sa !== sb) return sa - sb;
+            return a.Name.localeCompare(b.Name);
         });
 
-        acc[category] = grouped[category] || [];
+        acc[category] = grouped[category];
         return acc;
     }, {});
 
@@ -152,24 +170,37 @@ function groupSpeakersByCategory(speakers) {
 }
 
 
-function getSessions(sessionTitle, day, time, venue) {
-    const titles = sessionTitle.split(',');
-    const days = day.split(',');
-    const times = time.split(',');
-    const venues = venue.split(',');
+function getSessions(sessionTitle, topic, day, time, venue) {
+    const titles = sessionTitle ? sessionTitle.split(';') : [];
+    const topics = topic ? topic.split(';') : [];
+    const days = day ? day.split(';') : [];
+    const times = time ? time.split(';') : [];
+    const venues = venue ? venue.split(';') : [];
+
+    const maxLength = Math.max(
+        titles.length,
+        topics.length,
+        days.length,
+        times.length,
+        venues.length
+    );
 
     let sessionHtml = '';
 
-    const sessionLabel = titles.length === 1 ? 'Session' : 'Session ${i + 1}';
-
-    for (let i = 0; i < titles.length; i++) {
+    for (let i = 0; i < maxLength; i++) {
         sessionHtml += `
-            <div class="session">
-                ${titles.length === 1 ? 'Session' : `Session ${i + 1}`}: ${titles[i].trim()} | ${days[i]?.trim() || 'TBA'}: ${times[i]?.trim() || 'TBA'} | Venue: ${venues[i]?.trim() || 'TBA'}
+            <div class="session-item">
+                ${titles[i]?.trim() ? `<div style="font-style: italic;">Session: ${titles[i].trim()}</div>` : ''}
+                <div style="margin-left: 10px;">${topics[i]?.trim() || 'TBA'}</div>
+                <div style="margin-left: 10px; margin-bottom: 5px;">
+                    ${days[i]?.trim() || 'Date - TBA'} |
+                    ${times[i]?.trim() || 'Time - TBA'} |
+                    ${venues[i]?.trim() || 'Venue - TBA'}
+                </div>
             </div>
         `;
     }
-    
+
     return sessionHtml;
 }
 
@@ -242,24 +273,22 @@ window.openSpeakerProfile = function(speakerID) {
             <img src="${speaker.querySelector('img').src}" onerror="this.onerror=null; this.src='${speaker.df}';">
             <div class="band2">
                 <h2>${speaker.querySelector('h3').textContent}</h2>
-                <p style="font-style: italic; font-weight: normal">${speaker.querySelector('h4:nth-of-type(1)').textContent}</p>
-                <p style="font-weight: Bold">${speaker.querySelector('h4:nth-of-type(2)').textContent}</p>
+                <p style="font-weight: normal">
+                    ${speaker.querySelector('h4').textContent.replace('|', '<br>')}
+                </p>
             </div>
         </div>
         <p>${speaker.querySelector('p:nth-of-type(1)').textContent}</p>
-        <div class="ribbon" >Sessions</div>
-        
-        ${speaker.querySelector('h5').textContent.split('Session').map((session, index) => {
-            if (index === 0) {
-                return ''; // Do nothing for the first part (before the first "Session")
-            }
-            return `
-                ${index > 1 ? '<br>' : ''} 
-                <div class="band3">
-                    <p>Session ${session}</p>
-                </div>
-            `;
-        }).join('')}
+        <div class="ribbon">Sessions</div>
+        <div class="band3">
+            ${Array.from(speaker.querySelectorAll('.session-item'))
+                .map(session => `
+                    <div class="session-card_a">
+                        ${session.innerHTML}
+                    </div>
+                `).join('')}
+        </div>
+
         
         
         

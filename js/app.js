@@ -196,8 +196,6 @@ window.addEventListener("load", () => {
         if (banner && installBtn) {
             banner.classList.remove("hidden");
             installBtn.textContent = "Tap Share then 'Add to Home Screen'";
-            // On iOS, we don't 'click' to install, so we can disable the button 
-            // or just use it as a label.
             installBtn.style.background = "transparent";
             installBtn.style.color = "white";
         }
