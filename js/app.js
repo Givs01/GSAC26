@@ -206,3 +206,4 @@ window.addEventListener("load", () => {
 window.addEventListener("appinstalled", () => {
     document.getElementById("install-banner")?.remove();
 });
+
