@@ -37,6 +37,11 @@ export function loadHome() {
                   
                     <div class="card-container">
                         <div class="card">
+                            <div class="card-content" style="padding: 10px;">
+                                <h1>2026</h1>
+                            </div>
+                        </div>
+                        <div class="card">
                             <div class="card-content">
                                 <h1>${general.speakers || '0'}</h1>
                                 <h2>Speakers and Presenters</h2>
@@ -51,7 +56,7 @@ export function loadHome() {
                             </div>
                             <div class="card-content">
                                 <h1>${general.registrations || '0'}</h1>
-                                <h2>Attendees</h2>
+                                <h2>Registrations</h2>
                             </div>
                         </div>
                         <div class="card">
