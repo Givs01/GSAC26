@@ -1421,7 +1421,7 @@ iframe {
 /* The Install Button */
 #install-banner button#install-btn {
     background: var(--primary-color);
-    color: white;
+    color: var(--text-color);
     border: none;
     padding: 12px;
     font-size: 0.8rem;
