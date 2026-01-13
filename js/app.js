@@ -200,6 +200,7 @@ window.addEventListener("load", () => {
             installBtn.style.color = "black";
         }
     }
+    
 });
 
 // Remove banner after app installed
