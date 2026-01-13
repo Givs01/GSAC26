@@ -78,9 +78,11 @@ export function loadSpeakers() {
                             ${speakersInCategory.map(speaker => `
                         </div>
                             <section class="profcard" id="${speaker.ID}" onclick="openSpeakerProfile('${speaker.ID}')">
-                                <div class="bands">
-                                    <img src="${speaker.FullPath}" onerror="this.onerror=null; this.src='${speaker.df}';">
-
+                               <div class="bands">
+                                    <div class="band-avatar">
+                                        <img src="${speaker.FullPath}" 
+                                            onerror="this.onerror=null; this.src='${speaker.df}';">
+                                    </div>
                                     <div class="content-box-b">
                                         <h3>${speaker.Name}</h3>
                                         <h4 style="font-weight: normal;">${speaker.Designation || ""} | ${speaker.Organization || ""}</h4>
@@ -270,7 +272,9 @@ window.openSpeakerProfile = function(speakerID) {
 
     modalBody.innerHTML = `
         <div class="band">
-            <img src="${speaker.querySelector('img').src}" onerror="this.onerror=null; this.src='${speaker.df}';">
+            <div class="band-avatar">
+                <img src="${speaker.querySelector('img').src}" onerror="this.onerror=null; this.src='${speaker.df}';">
+            </div>
             <div class="band2">
                 <h2>${speaker.querySelector('h3').textContent}</h2>
                 <p style="font-weight: normal">
