@@ -2000,8 +2000,8 @@
       "Organization": "Administrative Staff College of India (ASCI)",
       "Designation": "",
       "Bio": "",
-      "Photo": "",
-      "FullPath": "",
+      "Photo": "Ankur Parashar.png",
+      "FullPath": "images/people/Ankur Parashar.png",
       "ParticipantCatagory": "Verbal Presenter",
       "SessionType": "",
       "SessionTitle": "",
@@ -2011,7 +2011,7 @@
       "Time": "",
       "Details": "",
       "Remarks": "",
-      "df": "",
+      "df": "images/photo.png",
       "author/co-author": ""
     },
     {
@@ -2300,8 +2300,8 @@
       "Organization": "CEPT University",
       "Designation": "Student",
       "Bio": "",
-      "Photo": "",
-      "FullPath": "",
+      "Photo": "Charmil Prajapati.png",
+      "FullPath": "images/people/Charmil Prajapati.png",
       "ParticipantCatagory": "Poster Presenter",
       "SessionType": "",
       "SessionTitle": "",
@@ -2311,7 +2311,7 @@
       "Time": "",
       "Details": "",
       "Remarks": "",
-      "df": "",
+      "df": "images/photo.png",
       "author/co-author": ""
     },
     {
@@ -2360,8 +2360,8 @@
       "Organization": "Mumbai University",
       "Designation": "Student",
       "Bio": "",
-      "Photo": "",
-      "FullPath": "",
+      "Photo": "Dr. Danley Colecraft Aidoo.png",
+      "FullPath": "images/people/Dr. Danley Colecraft Aidoo.png",
       "ParticipantCatagory": "Poster Presenter",
       "SessionType": "",
       "SessionTitle": "",
@@ -2371,7 +2371,7 @@
       "Time": "",
       "Details": "",
       "Remarks": "",
-      "df": "",
+      "df": "images/photo.png",
       "author/co-author": ""
     },
     {
@@ -3080,8 +3080,8 @@
       "Organization": "Viega Foundation",
       "Designation": "",
       "Bio": "",
-      "Photo": "",
-      "FullPath": "",
+      "Photo": "Medje Prahm.png",
+      "FullPath": "images/people/Medje Prahm.png",
       "ParticipantCatagory": "Inaugural",
       "SessionType": "",
       "SessionTitle": "",
@@ -3091,7 +3091,7 @@
       "Time": "",
       "Details": "",
       "Remarks": "",
-      "df": "",
+      "df": "images/photo.png",
       "author/co-author": ""
     },
     {
@@ -4420,8 +4420,8 @@
       "Organization": "CEPT University",
       "Designation": "Student",
       "Bio": "",
-      "Photo": "",
-      "FullPath": "",
+      "Photo": "Zeel Patel.png",
+      "FullPath": "images/people/Zeel Patel.png",
       "ParticipantCatagory": "Poster Presenter",
       "SessionType": "",
       "SessionTitle": "",
@@ -4431,7 +4431,7 @@
       "Time": "",
       "Details": "",
       "Remarks": "",
-      "df": "",
+      "df": "images/photo.png",
       "author/co-author": ""
     },
     {
@@ -4467,7 +4467,7 @@
     "description3": "The third edition of GSAC focuses on WASH Monitoring, Governance and Financing and WASH Innovations in the Global South. GSAC is visualised as a cross-learning event among sector partners, academia and researchers.",
     "registrations": "500+",
     "speakers": "130+",
-    "countries": 40,
+    "countries": "40+",
     "organizations": "250+",
     "registration_link": "https://docs.google.com/forms/d/e/1FAIpQLSe52KU-jwnjrkPqK6DK2I4KCRIGxYu0udLInFEpKEbDVPbjjA/viewform",
     "theme1": "Monitoring WASH and climate",
