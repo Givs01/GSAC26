@@ -197,7 +197,7 @@ window.addEventListener("load", () => {
             banner.classList.remove("hidden");
             installBtn.textContent = "Tap Share then 'Add to Home Screen'";
             installBtn.style.background = "transparent";
-            installBtn.style.color = "white";
+            installBtn.style.color = "black";
         }
     }
 });
