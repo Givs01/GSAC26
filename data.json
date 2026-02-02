@@ -1215,7 +1215,7 @@
       "Time": "10:45 - 11:15",
       "Session": "Tea and Networking break",
       "Speaker": "",
-      "Venue": "",
+      "Venue": "Near Sagara Basement",
       "Class": "g1"
     },
     {
@@ -1275,7 +1275,7 @@
       "Time": "15:45 - 16:00 ",
       "Session": "Tea and Networking",
       "Speaker": "",
-      "Venue": "",
+      "Venue": "Near Sagara Basement",
       "Class": "g1"
     },
     {
@@ -1294,7 +1294,7 @@
       "Date": "6-Feb-2026",
       "Time": "16:00 - 17:30 ",
       "Session": "Technical Sessions 2 - “Governance and Financing for inclusive and climate resilient WASH”",
-      "Speaker": "Chaired by:\r\nSaswat Bandyopadhyay FP CEPT\r",
+      "Speaker": "Chaired by:\nSaswat Bandyopadhyay, FP CEPT\n",
       "Venue": "FA-101a",
       "Class": 2
     },
@@ -1354,7 +1354,7 @@
       "Date": "6-Feb-2026",
       "Time": "17:30 - 19:00",
       "Session": "Technical Partner Session 3",
-      "Speaker": "Global Water and Sanitation Center (GWSC)",
+      "Speaker": "Harnessing Data Intelligence for Sanitation Governance: Lessons from the Integrated Municipal Information System (IMIS) Approach, Global Water and Sanitation Center (GWSC)",
       "Venue": "Sagara Basement",
       "Class": ""
     },
@@ -1395,7 +1395,7 @@
       "Time": "8:00 - 8:45",
       "Session": "Tea and Networking",
       "Speaker": "",
-      "Venue": "",
+      "Venue": "Near Sagara Basement",
       "Class": "g1"
     },
     {
@@ -1434,7 +1434,7 @@
       "Date": "7-Feb-2026",
       "Time": "11:00 - 11:45 ",
       "Session": "Keynote Address 5",
-      "Speaker": "Osward Chanda, Former AfDB, Côte d'Ivoire",
+      "Speaker": "Osward Chanda, Former Director, AfDB, Côte d'Ivoire",
       "Venue": "Sagara Basement",
       "Class": 2
     },
@@ -1444,7 +1444,7 @@
       "Date": "7-Feb-2026",
       "Time": "11:45 - 12:45",
       "Session": "Panel Discussion - Academic discourse on WASH climate and urban planning",
-      "Speaker": "Moderator:  Mona Iyer, Faculty of Planning-CEPT, India <br>\r\n•\tKalimuthu Arumugam Pillai, WASHI, India  <br>\r\n•\tRajul Gajjar, Gujarat Technological University, India  <br>\r\n•\tMeenakshi Arora, University of Melbourne, Australia  <br>\r\n•\tJagath Munasinghe, University of Moratuwa, Srilanka   <br>\r\n",
+      "Speaker": "Moderator:  Mona Iyer, Faculty of Planning-CEPT, India <br>\n•        Kalimuthu Arumugam Pillai, WASH-I, India  <br>\n•        Rajul Gajjar, Gujarat Technological University, India  <br>\n•        Meenakshi Arora, University of Melbourne, Australia  <br>\n•        Jagath Munasinghe, University of Moratuwa, Sri Lanka   <br>\n",
       "Venue": "Sagara Basement",
       "Class": 2
     },
@@ -1525,7 +1525,7 @@
       "Time": "16:00 - 16:30 ",
       "Session": "Tea and Networking break",
       "Speaker": "",
-      "Venue": "",
+      "Venue": "Near Sagara Basement",
       "Class": "g1"
     },
     {
@@ -1545,7 +1545,7 @@
       "Time": "18:00 - 18:30",
       "Session": "Concluding Session - Vote of Thanks",
       "Speaker": "",
-      "Venue": "",
+      "Venue": "Sagara Basement",
       "Class": 2
     }
   ],
@@ -1559,12 +1559,12 @@
       "Photo": "Aasim Mansuri.png",
       "FullPath": "images/people/Aasim Mansuri.png",
       "ParticipantCatagory": "Inaugural",
-      "SessionType": "",
+      "SessionType": "Inaugural Ceremony, Panel Discussion",
       "SessionTitle": "",
-      "Topic": "",
-      "Venue": "",
-      "Day": "",
-      "Time": "",
+      "Topic": "Inaugural and Welcome Address; Panel Discussion - Water, Climate and Gender",
+      "Venue": "BNB Hall; BNB Hall",
+      "Day": "Day -1; Day-1",
+      "Time": "09:00 - 10:00; 11:15 - 12:15",
       "Details": "",
       "Remarks": "",
       "df": "images/photo.png",
@@ -3034,7 +3034,7 @@
       "SerialNumber": "",
       "Name": "Mona Iyer",
       "Organization": "CEPT University, CUPDF",
-      "Designation": " Professor and Head",
+      "Designation": "Professor and Head",
       "Bio": "Mona has over 18 years of experience in research, training and consultancy in water, sanitation and waste management sectors with focus on policy initiatives and project development mainly in Asia and the Pacific. Dr. Mona Iyer is the Head of the CEPT Urban Planning and Design Foundation (CUPDF). She is a Professor at the Faculty of Planning, CEPT University, and has over 25 years of experience across academia, research, training, and consultancy in the areas of water, sanitation, solid waste management, and water-sensitive urban planning. She joined CEPT University in 2005 after eight years of professional practice and served as Dean, Faculty of Planning from 2019 to 2024, providing academic leadership and strengthening national and international collaborations. She currently serves as Regional Director (India Hub) of the Global Sanitation Graduate School (GSGS), reinforcing CEPT University’s global academic presence.She has been recipient of prestigious British Chevening Fellowship for Environment Management, UK and Netherland Fellowship Programme (for solid waste management) at UNESCO-IHE, Institute for water education, Delft. Mona holds a PhD in urban wastewater reuse policies. She was gold medallist in Post Graduate Diploma in Planning from CEPT University, Ahmedabad, India in 1997 and B.E. in Civil Engineering from BVM Engineering College, SP University, Gujarat, India in 1996. Mona has been involved in many projects that involves benchmarking of cities for different utility services. At CEPT, other than teaching she has been Team leader for the preparation of City Development Plans (CDP) and also Conducted appraisal of CDPs. She has been Team leader for planning and conducting training programs for Chief officers of Municipalities of Gujarat and active team member of PAS (Performance Assessment System for water and Sanitation), now C-WAS at CEPT",
       "Photo": "Ms. Mona Iyer.png",
       "FullPath": "images/people/Ms. Mona Iyer.png",
@@ -4132,12 +4132,32 @@
     },
     {
       "SerialNumber": "",
-      "Name": "Manish Karpe, Utkarsha Kavadi ",
+      "Name": "Manish Karpe",
       "Organization": "All India Institute of Local Self Government",
       "Designation": "Research Associate",
       "Bio": "",
-      "Photo": "Manish Karpe, Utkarsha Kavadi .png",
-      "FullPath": "images/people/Manish Karpe, Utkarsha Kavadi .png",
+      "Photo": "Manish Karpe.png",
+      "FullPath": "images/people/Manish Karpe.png",
+      "ParticipantCatagory": "Verbal Presenter",
+      "SessionType": "",
+      "SessionTitle": "",
+      "Topic": "",
+      "Venue": "",
+      "Day": "",
+      "Time": "",
+      "Details": "",
+      "Remarks": "",
+      "df": "images/photo.png",
+      "author/co-author": "author"
+    },
+    {
+      "SerialNumber": "",
+      "Name": "Utkarsha Kavadi ",
+      "Organization": "All India Institute of Local Self Government",
+      "Designation": "Research Associate",
+      "Bio": "",
+      "Photo": "Utkarsha Kavadi .png",
+      "FullPath": "images/people/Utkarsha Kavadi .png",
       "ParticipantCatagory": "Verbal Presenter",
       "SessionType": "",
       "SessionTitle": "",
