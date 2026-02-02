@@ -1203,8 +1203,8 @@
       "Day": 1,
       "Date": "6-Feb-2026",
       "Time": "10:00 - 10:45",
-      "Session": "Keynote Address 1",
-      "Speaker": "Neeta Pokhrel, ADB, Philippines",
+      "Session": "Keynote Address 1- Neeta Pokhrel, ADB, Philippines",
+      "Speaker": "Introduction- Aasim Mansuri, CWAS, CRDF-CEPT University, India",
       "Venue": "BNB Hall",
       "Class": 2
     },
@@ -1233,8 +1233,8 @@
       "Day": 1,
       "Date": "6-Feb-2026",
       "Time": "12:15 - 13:00",
-      "Session": "Keynote Address 2",
-      "Speaker": "Silver Mugisha, NWSC, Uganda",
+      "Session": "Keynote Address 2 – Silver Mugisha, NWSC, Uganda",
+      "Speaker": "Introduction- Darshan Parikh, CRDF-CEPT University, India",
       "Venue": "BNB Hall",
       "Class": 2
     },
@@ -1263,8 +1263,8 @@
       "Day": 1,
       "Date": "6-Feb-2026",
       "Time": "15:00 - 15:45",
-      "Session": "Keynote Address 3",
-      "Speaker": "Patrick Moriarty, IRC, Netherlands",
+      "Session": "Keynote Address 3- Patrick Moriarty, IRC, Netherlands",
+      "Speaker": "Introduction- Dhruv Bhavsar, CRDF-CEPT University, India",
       "Venue": "BNB Hall",
       "Class": 2
     },
@@ -1329,67 +1329,77 @@
       "Class": ""
     },
     {
-      "ID": "",
-      "Day": 1,
-      "Date": "6-Feb-2026",
-      "Time": "17:30 - 19:00",
-      "Session": "Technical Partner Session 1",
-      "Speaker": "Sanitation for Climate Resilience and Inclusion: Securing Water Systems in a \r\nChanging Climate\r\n(NFSSM and Climate Rise Alliance)\r",
-      "Venue": "BNB Hall",
-      "Class": ""
-    },
-    {
-      "ID": "",
-      "Day": 1,
-      "Date": "6-Feb-2026",
-      "Time": "17:30 - 19:00",
-      "Session": "Technical Partner Session 2",
-      "Speaker": "Global Sanitation Graduate School (GSGS)",
-      "Venue": "FA-101a",
-      "Class": ""
-    },
-    {
-      "ID": "",
-      "Day": 1,
-      "Date": "6-Feb-2026",
-      "Time": "17:30 - 19:00",
-      "Session": "Technical Partner Session 3",
-      "Speaker": "Harnessing Data Intelligence for Sanitation Governance: Lessons from the Integrated Municipal Information System (IMIS) Approach, Global Water and Sanitation Center (GWSC)",
-      "Venue": "Sagara Basement",
-      "Class": ""
-    },
-    {
-      "ID": "",
-      "Day": 1,
-      "Date": "6-Feb-2026",
-      "Time": "17:30 - 19:00",
-      "Session": "Technical Partner Session 4",
-      "Speaker": "Kutch Partners Meet: Advancing Last-Mile Access to Safe Drinking Water",
-      "Venue": "FP Audi",
-      "Class": ""
-    },
-    {
       "ID": 16,
       "Day": 1,
       "Date": "6-Feb-2026",
       "Time": "17:30 - 19:00",
-      "Session": "Technical Partner Session 5",
-      "Speaker": "Women in Water and Sanitation: Leadership, Pathways and Practice \r\n(ABD in collaboration CWAS)\r",
-      "Venue": "CFP 307",
-      "Class": 2
+      "Session": "Partner Session 1 - \" Sanitation for Climate Resilience and Inclusion: Securing Water Systems in a \n Changing Climate\"",
+      "Speaker": "NFSSM and Climate Rise Alliance",
+      "Venue": "BNB Hall",
+      "Class": ""
     },
     {
       "ID": 17,
       "Day": 1,
       "Date": "6-Feb-2026",
+      "Time": "17:30 - 19:00",
+      "Session": "Partner Session 2",
+      "Speaker": "Global Sanitation Graduate School (GSGS)",
+      "Venue": "FA-101a",
+      "Class": ""
+    },
+    {
+      "ID": 18,
+      "Day": 1,
+      "Date": "6-Feb-2026",
+      "Time": "17:30 - 19:00",
+      "Session": "Partner Session 3 - \"Harnessing Data Intelligence for Sanitation Governance: Lessons from the Integrated Municipal Information System (IMIS) Approach\"",
+      "Speaker": "Global Water and Sanitation Center (GWSC)",
+      "Venue": "Sagara Basement",
+      "Class": 1
+    },
+    {
+      "ID": 19,
+      "Day": 1,
+      "Date": "6-Feb-2026",
+      "Time": "17:30 - 19:00",
+      "Session": "Partner Session 4 - \"Kutch Partners Meet: Advancing Last-Mile Access to Safe Drinking Water\"",
+      "Speaker": "",
+      "Venue": "FP Audi",
+      "Class": 1
+    },
+    {
+      "ID": 20,
+      "Day": 1,
+      "Date": "6-Feb-2026",
+      "Time": "17:30 - 19:00",
+      "Session": "Partner Session 5 - \"Women in Water and Sanitation: Leadership, Pathways and Practice\" \n",
+      "Speaker": "ADB in collaboration CWAS",
+      "Venue": "CFP 307",
+      "Class": 2
+    },
+    {
+      "ID": 21,
+      "Day": 1,
+      "Date": "6-Feb-2026",
       "Time": "19:00 onwards",
-      "Session": "Gala Dinner and Cultural Program",
+      "Session": "Cultural Program",
+      "Speaker": "",
+      "Venue": "Kund",
+      "Class": "g1"
+    },
+    {
+      "ID": 22,
+      "Day": 1,
+      "Date": "6-Feb-2026",
+      "Time": "19:00 onwards",
+      "Session": "Gala Dinner",
       "Speaker": "",
       "Venue": "South Lawn",
       "Class": "g1"
     },
     {
-      "ID": 18,
+      "ID": 23,
       "Day": 2,
       "Date": "7-Feb-2026",
       "Time": "8:00 - 8:45",
@@ -1399,7 +1409,7 @@
       "Class": "g1"
     },
     {
-      "ID": 19,
+      "ID": 24,
       "Day": 2,
       "Date": "7-Feb-2026",
       "Time": "9:00 - 9:15",
@@ -1409,17 +1419,17 @@
       "Class": 2
     },
     {
-      "ID": 20,
+      "ID": 25,
       "Day": 2,
       "Date": "7-Feb-2026",
       "Time": "9:15 - 10:00 ",
-      "Session": "Keynote Address 4",
-      "Speaker": "Aloka Majumdar, HSBC, India",
+      "Session": "Keynote Address 4 – Aloka Majumdar, HSBC, India",
+      "Speaker": "Introduction- Dinesh Mehta, CRDF-CEPT University, India",
       "Venue": "Sagara Basement",
       "Class": 2
     },
     {
-      "ID": 21,
+      "ID": 26,
       "Day": 2,
       "Date": "7-Feb-2026",
       "Time": "10:00 - 11:00",
@@ -1429,17 +1439,17 @@
       "Class": 2
     },
     {
-      "ID": 22,
+      "ID": 27,
       "Day": 2,
       "Date": "7-Feb-2026",
       "Time": "11:00 - 11:45 ",
-      "Session": "Keynote Address 5",
-      "Speaker": "Osward Chanda, Former Director, AfDB, Côte d'Ivoire",
+      "Session": "Keynote Address 5- Osward Chanda, Former AfDB, Côte d'Ivoire",
+      "Speaker": "Introduction- Meera Mehta, CRDF-CEPT University, India",
       "Venue": "Sagara Basement",
       "Class": 2
     },
     {
-      "ID": 23,
+      "ID": 28,
       "Day": 2,
       "Date": "7-Feb-2026",
       "Time": "11:45 - 12:45",
@@ -1449,7 +1459,7 @@
       "Class": 2
     },
     {
-      "ID": 24,
+      "ID": 29,
       "Day": 2,
       "Date": "7-Feb-2026",
       "Time": "12:45 - 13:45",
@@ -1459,17 +1469,17 @@
       "Class": "g1"
     },
     {
-      "ID": 25,
+      "ID": 30,
       "Day": 2,
       "Date": "7-Feb-2026",
       "Time": "13:45 - 14:30",
-      "Session": "Keynote Address 6",
-      "Speaker": "Kate Medlicott, WHO, Switzerland",
+      "Session": "Key Note Address 6 –Kate Medlicott, WHO, Switzerland",
+      "Speaker": "Introduction- Dinesh Mehta, CRDF-CEPT University, India",
       "Venue": "Sagara Basement",
       "Class": 2
     },
     {
-      "ID": 26,
+      "ID": 31,
       "Day": 2,
       "Date": "7-Feb-2026",
       "Time": "14:30 - 16:00",
@@ -1479,7 +1489,7 @@
       "Class": 2
     },
     {
-      "ID": 27,
+      "ID": 32,
       "Day": 2,
       "Date": "7-Feb-2026",
       "Time": "14:30 - 16:00",
@@ -1489,7 +1499,7 @@
       "Class": 2
     },
     {
-      "ID": 28,
+      "ID": 33,
       "Day": 2,
       "Date": "7-Feb-2026",
       "Time": "14:30 - 16:00",
@@ -1499,7 +1509,7 @@
       "Class": 2
     },
     {
-      "ID": 29,
+      "ID": 34,
       "Day": 2,
       "Date": "7-Feb-2026",
       "Time": "14:30 - 16:00",
@@ -1509,7 +1519,7 @@
       "Class": ""
     },
     {
-      "ID": 30,
+      "ID": 35,
       "Day": 2,
       "Date": "7-Feb-2026",
       "Time": "14:30 - 16:00",
@@ -1519,7 +1529,7 @@
       "Class": ""
     },
     {
-      "ID": 31,
+      "ID": 36,
       "Day": 2,
       "Date": "7-Feb-2026",
       "Time": "16:00 - 16:30 ",
@@ -1529,7 +1539,7 @@
       "Class": "g1"
     },
     {
-      "ID": 32,
+      "ID": 37,
       "Day": 2,
       "Date": "7-Feb-2026",
       "Time": "16:30 - 18:00",
@@ -1539,7 +1549,7 @@
       "Class": 2
     },
     {
-      "ID": 33,
+      "ID": 38,
       "Day": 2,
       "Date": "7-Feb-2026",
       "Time": "18:00 - 18:30",
@@ -4401,10 +4411,10 @@
     "description1": "The Center for Water and Sanitation (CWAS) at CRDF, CEPT University is organising the third edition of Global South Academic Conclave (GSAC) on WASH and Climate in February 2026. The previous two editions in 2024 and 2025 were immensely successful, where more than 2000 participants from over 250 organisations across 35 countries joined us at these conclaves.",
     "description2": "To continue these discussions, we have organised this third edition of GSAC on 6th–7th February 2026 at CEPT University campus in Ahmedabad. It is being organised in collaboration with the Faculty of Planning, CEPT University, and it is supported by the Viega Foundation and Gates Foundation. ",
     "description3": "The third edition of GSAC focuses on WASH Monitoring, Governance and Financing and WASH Innovations in the Global South. GSAC is visualised as a cross-learning event among sector partners, academia and researchers.",
-    "registrations": "700+",
-    "speakers": "140+",
-    "countries": "45+",
-    "organizations": "250+",
+    "registrations": 700,
+    "speakers": 140,
+    "countries": 45,
+    "organizations": 250,
     "registration_link": "https://docs.google.com/forms/d/e/1FAIpQLSe52KU-jwnjrkPqK6DK2I4KCRIGxYu0udLInFEpKEbDVPbjjA/viewform",
     "theme1": "Monitoring WASH and climate",
     "theme1_d": "To showcase systems, policies and strategies for measuring and monitoring WASH outcomes in different countries.",
