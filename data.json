@@ -1215,7 +1215,7 @@
       "Time": "10:45 - 11:15",
       "Session": "Tea and Networking break",
       "Speaker": "",
-      "Venue": "Near Sagara Basement",
+      "Venue": "",
       "Class": "g1"
     },
     {
@@ -1275,7 +1275,7 @@
       "Time": "15:45 - 16:00 ",
       "Session": "Tea and Networking",
       "Speaker": "",
-      "Venue": "Near Sagara Basement",
+      "Venue": "",
       "Class": "g1"
     },
     {
@@ -1395,7 +1395,7 @@
       "Time": "8:00 - 8:45",
       "Session": "Tea and Networking",
       "Speaker": "",
-      "Venue": "Near Sagara Basement",
+      "Venue": "",
       "Class": "g1"
     },
     {
@@ -1525,7 +1525,7 @@
       "Time": "16:00 - 16:30 ",
       "Session": "Tea and Networking break",
       "Speaker": "",
-      "Venue": "Near Sagara Basement",
+      "Venue": "",
       "Class": "g1"
     },
     {
@@ -3313,12 +3313,12 @@
     {
       "SerialNumber": "",
       "Name": "Pankaj Khandelwal",
-      "Organization": "",
-      "Designation": "",
-      "Bio": "",
-      "Photo": "",
-      "FullPath": "",
-      "ParticipantCatagory": "",
+      "Organization": "CEPT University",
+      "Designation": "Student",
+      "Bio": "I am Pankaj Khandelwal, a master’s student in Urban Management (4th Semester) at the Faculty of Management, CEPT University, and an architect with over two years of professional experience. My academic and professional interests lie in urban sanitation, sewerage and drainage systems, solid waste management, and WASH governance in Indian cities.\r\nAs part of my postgraduate research, I have worked on a detailed case study of Morbi Municipal Corporation, analysing its sewerage and drainage systems through a service value chain approach. My work focuses on identifying gaps between policy frameworks and on-ground service delivery, with specific attention to operations, institutional arrangements, and sustainability. I am keenly interested in evidence-based urban planning, the use of digital tools for infrastructure management, and scalable sanitation solutions for urban contexts.\r",
+      "Photo": "Pankaj Khandelwal.png",
+      "FullPath": "images/people/Pankaj Khandelwal.png",
+      "ParticipantCatagory": "Poster Presenter",
       "SessionType": "",
       "SessionTitle": "",
       "Topic": "",
