@@ -1185,7 +1185,7 @@
       "Time": "08:00 - 09:00",
       "Session": "Registration",
       "Speaker": "",
-      "Venue": "",
+      "Venue": "CFP Passage",
       "Class": "g1"
     },
     {
@@ -1193,9 +1193,9 @@
       "Day": 1,
       "Date": "6-Feb-2026",
       "Time": "09:00 - 10:00",
-      "Session": "Inaugural Address",
-      "Speaker": "",
-      "Venue": "",
+      "Session": "Inaugural and Welcome Address",
+      "Speaker": "•        Meera Mehta and Dinesh Mehta, CWAS, CRDF-CEPT University, India <br>\n•        Dhruv Bhavsar and Aasim Mansuri, CWAS, CRDF-CEPT University, India <br>\n•        Shalini Sinha, Faculty of Planning-CEPT University, India <br>\n•        Suren Vakil, CRDF, CEPT University, India <br>\n•        Barjor Mehta, CEPT University, India <br>\n•        Sakshi Gudwani, Gates Foundation, India <br>\n•        Medje Prahm, Viega Foundation, Germany\n",
+      "Venue": "BNB Hall",
       "Class": 2
     },
     {
@@ -1204,8 +1204,8 @@
       "Date": "6-Feb-2026",
       "Time": "10:00 - 10:45",
       "Session": "Keynote Address 1",
-      "Speaker": "",
-      "Venue": "",
+      "Speaker": "Neeta Pokhrel, ADB, Philippines",
+      "Venue": "BNB Hall",
       "Class": 2
     },
     {
@@ -1224,8 +1224,8 @@
       "Date": "6-Feb-2026",
       "Time": "11:15 - 12:15",
       "Session": "Panel Discussion - Data driven actions and innovations for WASH and Climate Change ",
-      "Speaker": "",
-      "Venue": "",
+      "Speaker": "Moderator: Sakshi Gudwani, Gates Foundation, India <br>\r\n•\tS.M. Vijayanand (Retd. IAS), India <br>\r\n•\tRamanath Jha, (Retd. IAS), ORF, India  <br>\r\n•\tAlejandro Jimenez, IVL, Sweden <br>\r\n•\tAbdu Maliki Muyinda, ESAWAS, Uganda <br>\r\n•\tManvita Baradi, UMC, India <br>\r\n",
+      "Venue": "BNB Hall",
       "Class": 2
     },
     {
@@ -1234,8 +1234,8 @@
       "Date": "6-Feb-2026",
       "Time": "12:15 - 13:00",
       "Session": "Keynote Address 2",
-      "Speaker": "",
-      "Venue": "",
+      "Speaker": "Silver Mugisha, NWSC, Uganda",
+      "Venue": "BNB Hall",
       "Class": 2
     },
     {
@@ -1245,7 +1245,7 @@
       "Time": "13:00 - 14:00",
       "Session": "Lunch",
       "Speaker": "",
-      "Venue": "",
+      "Venue": "South Lawn",
       "Class": "g1"
     },
     {
@@ -1254,8 +1254,8 @@
       "Date": "6-Feb-2026",
       "Time": "14:00 - 15:00",
       "Session": "Panel Discussion - Water, Climate and Gender",
-      "Speaker": "",
-      "Venue": "",
+      "Speaker": "Moderator: Aasim Mansuri, CWAS, CRDF-CEPT University, India <br>\n•        Dinesh Mehta, CWAS, CRDF-CEPT University, India  <br>\n•        Jane Nabunnya Mulumba, IRC, Uganda  <br>\n•        Nitin Bassi, CEEW, India  <br>\n•        Bijal Brahmbhatt, MHT, India  <br>\n•        Pallavi Sobti-Rajpal, Utthan, India  \n ",
+      "Venue": "BNB Hall",
       "Class": 2
     },
     {
@@ -1264,8 +1264,8 @@
       "Date": "6-Feb-2026",
       "Time": "15:00 - 15:45",
       "Session": "Keynote Address 3",
-      "Speaker": "",
-      "Venue": "",
+      "Speaker": "Patrick Moriarty, IRC, Netherlands",
+      "Venue": "BNB Hall",
       "Class": 2
     },
     {
@@ -1284,8 +1284,8 @@
       "Date": "6-Feb-2026",
       "Time": "16:00 - 17:30 ",
       "Session": "Technical Sessions 1 - “Monitoring WASH outcomes and climate impacts”",
-      "Speaker": "",
-      "Venue": "",
+      "Speaker": "Chaired by:\r\nNitika Bhakuni, FP CEPT\r",
+      "Venue": "BNB Hall",
       "Class": 2
     },
     {
@@ -1294,8 +1294,8 @@
       "Date": "6-Feb-2026",
       "Time": "16:00 - 17:30 ",
       "Session": "Technical Sessions 2 - “Governance and Financing for inclusive and climate resilient WASH”",
-      "Speaker": "",
-      "Venue": "",
+      "Speaker": "Chaired by:\r\nSaswat Bandyopadhyay FP CEPT\r",
+      "Venue": "FA-101a",
       "Class": 2
     },
     {
@@ -1304,8 +1304,8 @@
       "Date": "6-Feb-2026",
       "Time": "16:00 - 17:30 ",
       "Session": "Technical Sessions 3 - “WASH innovations in technology and service delivery”",
-      "Speaker": "",
-      "Venue": "",
+      "Speaker": "Chaired by:\r\nPurvi Chhadva, FP CEPT\r",
+      "Venue": "Sagara Basement",
       "Class": 2
     },
     {
@@ -1314,8 +1314,8 @@
       "Date": "6-Feb-2026",
       "Time": "16:00 - 17:30 ",
       "Session": "Technical Session 4 - “WASH innovations in technology and service delivery”\r\n",
-      "Speaker": "",
-      "Venue": "",
+      "Speaker": "Chaired by:\r\nJignesh Mehta, FP CEPT\r",
+      "Venue": "FP Audi",
       "Class": ""
     },
     {
@@ -1324,8 +1324,48 @@
       "Date": "6-Feb-2026",
       "Time": "16:00 - 17:30 ",
       "Session": "Technical Session 5 - “Inclusive and climate resilient WASH” (sanitation)\r\n",
-      "Speaker": "",
-      "Venue": "",
+      "Speaker": "Chaired by:\nMelissa Smith, FP CEPT\n",
+      "Venue": "CFP 307",
+      "Class": ""
+    },
+    {
+      "ID": "",
+      "Day": 1,
+      "Date": "6-Feb-2026",
+      "Time": "17:30 - 19:00",
+      "Session": "Technical Partner Session 1",
+      "Speaker": "Sanitation for Climate Resilience and Inclusion: Securing Water Systems in a \r\nChanging Climate\r\n(NFSSM and Climate Rise Alliance)\r",
+      "Venue": "BNB Hall",
+      "Class": ""
+    },
+    {
+      "ID": "",
+      "Day": 1,
+      "Date": "6-Feb-2026",
+      "Time": "17:30 - 19:00",
+      "Session": "Technical Partner Session 2",
+      "Speaker": "Global Sanitation Graduate School (GSGS)",
+      "Venue": "FA-101a",
+      "Class": ""
+    },
+    {
+      "ID": "",
+      "Day": 1,
+      "Date": "6-Feb-2026",
+      "Time": "17:30 - 19:00",
+      "Session": "Technical Partner Session 3",
+      "Speaker": "Global Water and Sanitation Center (GWSC)",
+      "Venue": "Sagara Basement",
+      "Class": ""
+    },
+    {
+      "ID": "",
+      "Day": 1,
+      "Date": "6-Feb-2026",
+      "Time": "17:30 - 19:00",
+      "Session": "Technical Partner Session 4",
+      "Speaker": "Kutch Partners Meet: Advancing Last-Mile Access to Safe Drinking Water",
+      "Venue": "FP Audi",
       "Class": ""
     },
     {
@@ -1333,9 +1373,9 @@
       "Day": 1,
       "Date": "6-Feb-2026",
       "Time": "17:30 - 19:00",
-      "Session": "Technical Partner Session",
-      "Speaker": "",
-      "Venue": "",
+      "Session": "Technical Partner Session 5",
+      "Speaker": "Women in Water and Sanitation: Leadership, Pathways and Practice \r\n(ABD in collaboration CWAS)\r",
+      "Venue": "CFP 307",
       "Class": 2
     },
     {
@@ -1345,7 +1385,7 @@
       "Time": "19:00 onwards",
       "Session": "Gala Dinner and Cultural Program",
       "Speaker": "",
-      "Venue": "",
+      "Venue": "South Lawn",
       "Class": "g1"
     },
     {
@@ -1365,7 +1405,7 @@
       "Time": "9:00 - 9:15",
       "Session": "Reflections from Day 1",
       "Speaker": "",
-      "Venue": "",
+      "Venue": "Sagara Basement",
       "Class": 2
     },
     {
@@ -1374,8 +1414,8 @@
       "Date": "7-Feb-2026",
       "Time": "9:15 - 10:00 ",
       "Session": "Keynote Address 4",
-      "Speaker": "",
-      "Venue": "",
+      "Speaker": "Aloka Majumdar, HSBC, India",
+      "Venue": "Sagara Basement",
       "Class": 2
     },
     {
@@ -1384,8 +1424,8 @@
       "Date": "7-Feb-2026",
       "Time": "10:00 - 11:00",
       "Session": "Panel Discussion - Governance and financing (Impact Investing) for climate resilient and inclusive WASH",
-      "Speaker": "",
-      "Venue": "",
+      "Speaker": "Moderator: Dhruv Bhavsar, CWAS, CRDF-CEPT University, India <br>\r\n•\tMeera Mehta, CWAS, CRDF-CEPT University, India <br>\r\n•\tHamanth Kasan, IWA, South Africa <br>\r\n•\tHarish Ahuja, Social Stock Exchange, India <br>\r\n•\tNeha Kumar, Climate Bonds Initiative, India <br>\r\n•\tAparna Dua, Blended Finance Company, India",
+      "Venue": "Sagara Basement",
       "Class": 2
     },
     {
@@ -1394,8 +1434,8 @@
       "Date": "7-Feb-2026",
       "Time": "11:00 - 11:45 ",
       "Session": "Keynote Address 5",
-      "Speaker": "",
-      "Venue": "",
+      "Speaker": "Osward Chanda, Former AfDB, Côte d'Ivoire",
+      "Venue": "Sagara Basement",
       "Class": 2
     },
     {
@@ -1404,8 +1444,8 @@
       "Date": "7-Feb-2026",
       "Time": "11:45 - 12:45",
       "Session": "Panel Discussion - Academic discourse on WASH climate and urban planning",
-      "Speaker": "",
-      "Venue": "",
+      "Speaker": "Moderator:  Mona Iyer, Faculty of Planning-CEPT, India <br>\r\n•\tKalimuthu Arumugam Pillai, WASHI, India  <br>\r\n•\tRajul Gajjar, Gujarat Technological University, India  <br>\r\n•\tMeenakshi Arora, University of Melbourne, Australia  <br>\r\n•\tJagath Munasinghe, University of Moratuwa, Srilanka   <br>\r\n",
+      "Venue": "Sagara Basement",
       "Class": 2
     },
     {
@@ -1415,7 +1455,7 @@
       "Time": "12:45 - 13:45",
       "Session": "Lunch",
       "Speaker": "",
-      "Venue": "",
+      "Venue": "South Lawn",
       "Class": "g1"
     },
     {
@@ -1424,8 +1464,8 @@
       "Date": "7-Feb-2026",
       "Time": "13:45 - 14:30",
       "Session": "Keynote Address 6",
-      "Speaker": "",
-      "Venue": "",
+      "Speaker": "Kate Medlicott, WHO, Switzerland",
+      "Venue": "Sagara Basement",
       "Class": 2
     },
     {
@@ -1434,8 +1474,8 @@
       "Date": "7-Feb-2026",
       "Time": "14:30 - 16:00",
       "Session": "Technical Sessions 1 - “Monitoring WASH outcomes and climate impacts”",
-      "Speaker": "",
-      "Venue": "",
+      "Speaker": "Chaired by:\r\nAnil Roy, FP CEPT\r",
+      "Venue": "U04-201",
       "Class": 2
     },
     {
@@ -1444,8 +1484,8 @@
       "Date": "7-Feb-2026",
       "Time": "14:30 - 16:00",
       "Session": "Technical Sessions 2 - “Governance and Financing for inclusive and climate resilient WASH”",
-      "Speaker": "",
-      "Venue": "",
+      "Speaker": "Chaired by:\r\nSejal Patel, FP CEPT\r",
+      "Venue": "FA-101a",
       "Class": 2
     },
     {
@@ -1454,8 +1494,8 @@
       "Date": "7-Feb-2026",
       "Time": "14:30 - 16:00",
       "Session": "Technical Sessions 3 - “WASH innovations in technology and service delivery”",
-      "Speaker": "",
-      "Venue": "",
+      "Speaker": "Chaired by:\r\nRajiv Kadam, FP CEPT\r",
+      "Venue": "Sagara Basement",
       "Class": 2
     },
     {
@@ -1464,8 +1504,8 @@
       "Date": "7-Feb-2026",
       "Time": "14:30 - 16:00",
       "Session": "Technical Session 4 - “WASH innovations in technology and service delivery”\r\n",
-      "Speaker": "",
-      "Venue": "",
+      "Speaker": "Chaired by: Ravi Sannabhadti, FP CEPT",
+      "Venue": "FP Audi",
       "Class": ""
     },
     {
@@ -1475,7 +1515,7 @@
       "Time": "14:30 - 16:00",
       "Session": "Technical Session 5 - “Inclusive and climate resilient WASH”\n",
       "Speaker": "",
-      "Venue": "",
+      "Venue": "CFP 307",
       "Class": ""
     },
     {
@@ -1494,8 +1534,8 @@
       "Date": "7-Feb-2026",
       "Time": "16:30 - 18:00",
       "Session": "Open Poster Exhibition - Open Academic Forum",
-      "Speaker": "",
-      "Venue": "",
+      "Speaker": "Jury Members: Subhrangsu Goswami, Mansi Shah, Arjun Joshi, Narendra Mangwani, Siddh Doshi, Gargi Mishra",
+      "Venue": "Exhibition at North Lawn",
       "Class": 2
     },
     {
@@ -1628,7 +1668,7 @@
       "Details": "",
       "Remarks": "",
       "df": "images/photo.png",
-      "author/co-author": ""
+      "author/co-author": "author"
     },
     {
       "SerialNumber": "",
@@ -1695,7 +1735,7 @@
       "Name": "Aloka Majumdar",
       "Organization": " Philanthropy & Sustainability - HSBC, India",
       "Designation": "MD, Global Head & Head",
-      "Bio": "Aloka Majumdar is Managing Director, Global Head of Philanthropy & Head of Sustainability, India at HSBC.\r\nIn her capacity as Global Head of Philanthropy Aloka focusses on overseeing the execution of HSBC’s global philanthropy strategy working closely with multiple stakeholders. \r\nAloka heads Sustainability for HSBC Group in India, which comprises the Bank and other HSBC companies and lead the fulfillment of the growing sustainability priorities and initiatives for the Group in India.\r\nShe is a member of the HSBC India Operating Committee (OpCo).\r\nHer expertise lies in the fields of Financial Inclusion, Skills development and Climate Change. She has worked extensively with a wide range of stakeholders that include community-based organisations, multilateral agencies, the academia and central and state governments. She was awarded the Parivartan Sustainability Leadership Award in 2016 and recognized by Social Venture Partners (SVP) with Grant Thornton (knowledge partner) as a women exemplar in 2019.\r\nGraduating with Honours in Political Science from University of Calcutta, Aloka started her career as a financial journalist, specializing in covering Banking and Finance.\r\n\r",
+      "Bio": "Aloka Majumdar is Managing Director, Global Head of Philanthropy & Head of Sustainability, India at HSBC.\nIn her capacity as Global Head of Philanthropy Aloka focusses on overseeing the execution of HSBC’s global philanthropy strategy working closely with multiple stakeholders. \nAloka heads Sustainability for HSBC Group in India, which comprises the Bank and other HSBC companies and lead the fulfillment of the growing sustainability priorities and initiatives for the Group in India.\nShe is a member of the HSBC India Operating Committee (OpCo).\nHer expertise lies in the fields of Financial Inclusion, Skills development and Climate Change. She has worked extensively with a wide range of stakeholders that include community-based organisations, multilateral agencies, the academia and central and state governments. She was awarded the Parivartan Sustainability Leadership Award in 2016 and recognized by Social Venture Partners (SVP) with Grant Thornton (knowledge partner) as a women exemplar in 2019.\nGraduating with Honours in Political Science from University of Calcutta, Aloka started her career as a financial journalist, specializing in covering Banking and Finance.\n\n",
       "Photo": "Aloka Majumdar.png",
       "FullPath": "images/people/Aloka Majumdar.png",
       "ParticipantCatagory": "Keynote Speaker",
@@ -1833,7 +1873,7 @@
     {
       "SerialNumber": "",
       "Name": "Anju Varghese",
-      "Organization": "Bremen Overseas Research and Development Association (BORDA), South Africa",
+      "Organization": "Bremen Overseas Research and Development Association (BORDA), South Asia",
       "Designation": "Program Coordinator- India",
       "Bio": "Anju Varghese is an Urban and Infrastructure Planner with nearly seven years of professional experience across the water, sanitation, solid waste management, and climate change sectors. She has worked with both non-governmental organisations and corporate advisory teams, supporting municipalities and development programmes across India, Bangladesh, and Nepal. Her experience includes the preparation of city-wide WASH and solid waste management action plans, Waste Flow Diagnostics, climate-responsive frameworks for small towns, and operational planning to improve municipal services, particularly for vulnerable communities. Anju has been actively involved in multilaterally funded projects, contributing to technical analysis, stakeholder consultations, spatial and data analysis, and knowledge dissemination through conferences and workshops. She holds a Master’s degree in Urban and Regional Planning from CEPT University and a Bachelor’s degree in Civil Engineering.",
       "Photo": "Anju Varghese.png",
@@ -2255,7 +2295,7 @@
       "Name": "Dinesh Mehta",
       "Organization": "Center for Water and Sanitation (CWAS), CRDF",
       "Designation": "Senior Advisor",
-      "Bio": "Dinesh Mehta is a Professor Emeritus and Senior Advisor at the Center for Water and Sanitation. He has over four decades of experience in urban policy, urban planning and management, in Asia and Africa.\n He was involved in global urban policy and dialogue as the head of Urban Management Programme at the UN-Habitat headquarters in Nairobi. He also contributed significantly to urban policy formulation by Government of India, while he was a Director of the National Institute of Urban Affairs, New Delhi, India. He was also the Director of School of Planning at CEPT University, Ahmedabad, India during 1986-1992. In 2013, Professor Mehta was awarded International Water Association’s Development Solutions Award in recognition of his contribution to research and practice in Water. In 2017 became a fellow of IWA and Chair of their specialist group on water and sanitation in developing countries\n He has a PhD from University of Pennsylvania, a Master’s in City and Regional Planning from Harvard University, and a Bachelor of Technology in Civil Engineering, IIT, Madras, India.",
+      "Bio": "Dinesh Mehta is a Professor Emeritus and Senior Advisor at the Center for Water and Sanitation. He has over four decades of experience in urban policy, urban planning and management, in Asia and Africa.\n He was involved in global urban policy and dialogue as the head of Urban Management Programme at the UN-Habitat headquarters in Nairobi. He also contributed significantly to urban policy formulation by Government of India, while he was a Director of the National Institute of Urban Affairs, New Delhi, India. He was also the Director of School of Planning at CEPT University, Ahmedabad, India during 1986-1992. In 2013, Professor Mehta was awarded International Water Association’s Development Solutions Award in recognition of his contribution to research and practice in Water. In 2017 became a fellow of IWA and Chair of their specialist group on water and sanitation in developing countries. He has a PhD from University of Pennsylvania, a Master’s in City and Regional Planning from Harvard University, and a Bachelor of Technology in Civil Engineering, IIT, Madras, India.",
       "Photo": "Dr. Dinesh Mehta.png",
       "FullPath": "images/people/Dr. Dinesh Mehta.png",
       "ParticipantCatagory": "Inaugural",
@@ -2298,26 +2338,6 @@
       "Bio": "Dixita Pariaker is trained as an architect and has around three years of experience working at the intersection of sanitation and informality. An alumna of the Regulatory Policy and Governance programme at the Tata Institute of Social Sciences (TISS), Mumbai, her master’s research examined the impacts of solid waste management policies in Surat on informal waste pickers and their livelihoods.\r\nShe has been involved in on-the-ground solid waste management work in Surat, engaging closely with waste collectors and waste pickers to address operational and livelihood concerns. She has also worked as part of a Technical Support Unit, contributing to national and state sanitation initiatives focused on the safety, recognition, and inclusion of sanitation workers and waste pickers.\r\nShe is currently associated with VIKAS Centre for Development, where she supports research and programme design across community-led initiatives. Her interests lie in solid waste management, informality and enterprise-based livelihood opportunities through waste.\r",
       "Photo": "Dixita Pariaker.png",
       "FullPath": "images/people/Dixita Pariaker.png",
-      "ParticipantCatagory": "Poster Presenter",
-      "SessionType": "",
-      "SessionTitle": "",
-      "Topic": "",
-      "Venue": "",
-      "Day": "",
-      "Time": "",
-      "Details": "",
-      "Remarks": "",
-      "df": "images/photo.png",
-      "author/co-author": "author"
-    },
-    {
-      "SerialNumber": "",
-      "Name": "Dr. K. Ravi Acharya",
-      "Organization": "",
-      "Designation": "",
-      "Bio": "",
-      "Photo": "Dr. K. Ravi Acharya.png",
-      "FullPath": "images/people/Dr. K. Ravi Acharya.png",
       "ParticipantCatagory": "Poster Presenter",
       "SessionType": "",
       "SessionTitle": "",
@@ -2455,7 +2475,7 @@
       "Name": "Jagath Munasinghe",
       "Organization": "University of Moratuwa",
       "Designation": "Professor",
-      "Bio": "Dr. Jagath Munasinghe is currently a Professor of Town Planning in the University of Moratuwa, where he has been an academic since 1999. \r\nGraduated with Master of Science in Architecture from University of Moratuwa in 1993 and Mater of Town Planning Degree from University of Moratuwa in 1999. \r\nObtained PhD in Planning and Urban Design from National University of Singapore in 2004.\r\nChartered Architect and Chartered Town Planner. \r\nA Fellow Member of the Sri Lanka Institute of Architects and Fellow Member of the Institute of Town Planners Sri Lanka and currently the President of the Institute of Town Planners Sri Lanka (2019-20)\r\nHas been leading the Consultancy Teams in many development projects.\r\nHeld the positions of the Director General of the National Physical Planning Department of Sri Lanka (March 2016- December 2019) and the Chairman of the Urban Development Authority (July 2016- November2019)\r\nBeing an academic held the positions of the Head of the Department of Town & Country Planning, University of Moratuwa (2008 -2014), the Director Postgraduate studies Department of Town & Country Planning, University of Moratuwa (2007- 2016), Director of the Faculty of Architecture Research Unit (2012-2015). The inaugural editor-in-chief of Bhumi: Planning Research Journal and Currently, is a co-editor of the Journal of South Asian Journal of Logistics and Transport. \r\nDetails on Research Publications are available in the University of Moratuwa, Department of Town & Country Planning web site. \r\n",
+      "Bio": "Dr. Jagath Munasinghe is currently a Professor of Town Planning in the University of Moratuwa, where he has been an academic since 1999. \nGraduated with Master of Science in Architecture from University of Moratuwa in 1993 and Mater of Town Planning Degree from University of Moratuwa in 1999. \nObtained PhD in Planning and Urban Design from National University of Singapore in 2004.\nChartered Architect and Chartered Town Planner. \nA Fellow Member of the Sri Lanka Institute of Architects and Fellow Member of the Institute of Town Planners Sri Lanka and currently the President of the Institute of Town Planners Sri Lanka (2019-20)\nHas been leading the Consultancy Teams in many development projects.\nHeld the positions of the Director General of the National Physical Planning Department of Sri Lanka (March 2016- December 2019) and the Chairman of the Urban Development Authority (July 2016- November2019)\nBeing an academic held the positions of the Head of the Department of Town & Country Planning, University of Moratuwa (2008 -2014), the Director Postgraduate studies Department of Town & Country Planning, University of Moratuwa (2007- 2016), Director of the Faculty of Architecture Research Unit (2012-2015). The inaugural editor-in-chief of Bhumi: Planning Research Journal and Currently, is a co-editor of the Journal of South Asian Journal of Logistics and Transport. \nDetails on Research Publications are available in the University of Moratuwa, Department of Town & Country Planning web site. \n",
       "Photo": "Jagath Munasinghe.png",
       "FullPath": "images/people/Jagath Munasinghe.png",
       "ParticipantCatagory": "Panelist",
@@ -2932,26 +2952,6 @@
     },
     {
       "SerialNumber": "",
-      "Name": "Mbole Mbuyu",
-      "Organization": "Bremen Overseas Research and Development Association (BORDA), South Africa",
-      "Designation": "Project Coordinator & Youth Water Advocate",
-      "Bio": "Mbole Mbuyu is a passionate chemical engineering graduate and School Sanitation Programme Coordinator at BORDA South Africa. With a strong foundation in water and sanitation systems, she is an emerging leader in the water sector, dedicated to transforming under-resourced schools through inclusive and sustainable WASH solutions. Mbole is a proud member of both the World Youth Parliament for Water and the South African Youth Parliament for Water, where she actively champions youth engagement, menstrual health, and circular sanitation practices. Her vision is grounded in equity and resilience, believing that \"every drop of water carries the power to create dignity, peace, and opportunity.\" Mbole’s work reflects a deep commitment to systems thinking, grassroots collaboration, and uplifting young voices in global water dialogues. She sees herself as part of the growing wave of young professionals shaping the future of water with purpose, courage, and innovation.",
-      "Photo": "Mbole Mbuyu.png",
-      "FullPath": "images/people/Mbole Mbuyu.png",
-      "ParticipantCatagory": "Verbal Presenter",
-      "SessionType": "",
-      "SessionTitle": "",
-      "Topic": "",
-      "Venue": "",
-      "Day": "",
-      "Time": "",
-      "Details": "",
-      "Remarks": "",
-      "df": "images/photo.png",
-      "author/co-author": "co-author"
-    },
-    {
-      "SerialNumber": "",
       "Name": "Medje Prahm",
       "Organization": "Viega Foundation",
       "Designation": "Chief Operating Officer",
@@ -3075,7 +3075,7 @@
       "Name": "Pallavi Sobti Rajpal",
       "Organization": "Utthan",
       "Designation": "Joint Chief Executive Officer",
-      "Bio": "",
+      "Bio": "Pallavi Sobti Rajpal is the Joint CEO of Utthan, a grassroots development organisation advancing gender justice and women’s agency through thematic interventions in water, livelihoods, gender equity and social inclusion, since 1981. With over two decades of experience, she has led work at the intersection of equity, sustainability, and institutional change. She has engaged in intersectional action research and co-authored several publications, influencing grassroots women’s institutions, Panchayats, civil society, and governments, including contributing to the recent reformulation of Gujarat’s 2024 State Gender Equity Policy.\r\n\r\nPallavi serves on the Board of the Working Group for Women and Land Ownership, Gujarat. She holds a Bachelor’s degree in Economics from Delhi University and a Master’s degree in Sociology from Gujarat University.\r\n\r\nhttps://www.linkedin.com/in/pallavi-sobti-rajpal/",
       "Photo": "Pallavi Sobti Rajpal.png",
       "FullPath": "images/people/Pallavi Sobti Rajpal.png",
       "ParticipantCatagory": "Panelist",
@@ -3392,12 +3392,12 @@
     },
     {
       "SerialNumber": "",
-      "Name": "Ram Khandelwal ",
+      "Name": "Ram Khandelwal",
       "Organization": "Urban Innovation Lab",
       "Designation": "Director",
       "Bio": "Ram Khandelwal is an urban expert with over 15 years of experience across urban planning, PPPs, climate resilience, water and sanitation, housing, and institutional reform. At Urban Innovation Lab (UIL), he leads complex, multi-sector assignments for governments, multilateral agencies, and foundations, including the World Bank, UN-Habitat, GIZ, KfW, ADB, DFID, and CEPT CRDF.\r\nTrained as an infrastructure planner, Ram combines technical depth with strong programme leadership, having delivered feasibility studies, DPRs, evaluations, and strategic roadmaps for projects exceeding ₹40,000 crores. His work spans urban water reuse strategies, smart cities, climate action planning, housing reform, and monitoring and evaluation of national schemes. He has worked across India, Europe, Africa, and Southeast Asia, and regularly engages with senior government stakeholders.\r\nRam is a published author, visiting faculty, and recipient of multiple professional awards, recognised for execution quality and policy-relevant insights.\r",
-      "Photo": "Ram Khandelwal .png",
-      "FullPath": "images/people/Ram Khandelwal .png",
+      "Photo": "Ram Khandelwal.png",
+      "FullPath": "images/people/Ram Khandelwal.png",
       "ParticipantCatagory": "Poster Presenter",
       "SessionType": "",
       "SessionTitle": "",
@@ -3455,7 +3455,7 @@
       "Name": "Rajul Gajjar",
       "Organization": "Gujarat Technological University, India",
       "Designation": "Vice Chancellor",
-      "Bio": "Dr. Rajul K. Gajjar is an eminent academic leader and a distinguished figure in the field of engineering education, with over four decades of experience in academia, research, and administration. She has significantly contributed to the advancement of engineering and technical education in India. Dr. Gajjar has an extensive research background with over 66 National and International Research Publications, four authored books, and three granted patents to her credit. She has supervised more than 30 PG and 8 Doctoral students and led over 38 high-impact projects, covering areas such as international collaborations, Centers of Excellence, research innovation, accreditation, and ranking frameworks for excellence in engineering education.\nHer contributions to research and innovation are evident in GTU’s outstanding achievements, including publishing 160+ patents, 1,700 registered Ph.D. scholars, and 683 research articles in SCI journals. Before assuming the role of Vice Chancellor at GTU, Dr. Gajjar served as the Principal of L.D. College of Engineering and other Government Engineering Colleges in Gujarat. She also held key administrative positions such as Additional Commissioner of the Education Department, Government of Gujarat, and Officiating Vice Chancellor of the Teacher’s University.",
+      "Bio": "Dr. Rajul K. Gajjar is a distinguished academic leader with over four decades of\r\nexperience in engineering education, research, and academic governance. She\r\nholds a Ph.D. in Structural Disasters from M.S- University, Baroda- As a prolific\r\nscholar, she has published more than 66 national and intemational research\r\npapers, authored four books, and holds three patents. She has also led 38+\r\nhigh-impact projects spanning research, innovation, accreditation, and\r\ninternational collaboration-\r\nAs the Vice Chancellor of Gujarat Technological University (GTLJ), she has\r\nstrengthened research, innovation, entrepreneurship, and global engagement,\r\nenabling GTU to achieve top NIRF rankings, secure {18.5 crore in IP funding,\r\nand support over 800 startups.\r\nDr- Gajjar actively serves on national committees for NEP 2020 implementation\r\nand is a member of the GI 00 Global Advisory Council. Her global exposure has\r\nenhanced GTU's intemational presence in innovation and research.",
       "Photo": "Dr. Rajul Gajjar.png",
       "FullPath": "images/people/Dr. Rajul Gajjar.png",
       "ParticipantCatagory": "Panelist",
@@ -3475,7 +3475,7 @@
       "Name": "Ramnath Jha",
       "Organization": "Observer Research Foundation",
       "Designation": "Distinguished Fellow  ",
-      "Bio": "Dr. Ramanath Jha is Distinguished Fellow at Observer Research Foundation, Mumbai. He works on urbanisation — urban sustainability, urban governance and urban planning.\r\n\r\nDr. Jha belongs to the 1977 batch of the Indian Administrative Service. During his time at the IAS —through the 1980s and 1990s — he was Administrator, Pandharpur Municipal Council; Administrator and Municipal Commissioner, Solapur; Collector and Deputy Director Municipal Administration, Ahmednagar; Municipal Commissioner, Pune; and Metropolitan Commissioner, MMRDA. His subsequent postings were as Regional Advisor, South Asia for the Urban Management Programme of the UNDP/UN-Habitat; Vice Chairman and Managing Director at MSRDC; and Principal Secretary, Transport, Ports and State Excise, Government of Maharashtra.\r\n\r\nHe received the state government’s Chinmulgund Award for Administrative Excellence in 1989. He sought voluntary retirement from government in 2008 and joined the private sector as CEO & MD, Khed Economic Infrastructure Pvt Ltd.\r\n\r\nDr. Jha has co-authored the books — Towards People Friendly Cities — published by UNICEF; Urban Essays, published by YASHADA and co-edited Perspectives in Urban Development, published by Capital Publishing Company. He has published a number of papers on a variety of urban subjects and has widely lectured on urban issues.",
+      "Bio": "Dr. Ramanath Jha is Distinguished Fellow at Observer Research Foundation, Mumbai. He works on urbanisation — urban sustainability, urban governance and urban planning.\n\nDr. Jha belongs to the 1977 batch of the Indian Administrative Service. During his time at the IAS —through the 1980s and 1990s — he was Administrator, Pandharpur Municipal Council; Administrator and Municipal Commissioner, Solapur; Collector and Deputy Director Municipal Administration, Ahmednagar; Municipal Commissioner, Pune; and Metropolitan Commissioner, MMRDA. His subsequent postings were as Regional Advisor, South Asia for the Urban Management Programme of the UNDP/UN-Habitat; Vice Chairman and Managing Director at MSRDC; and Principal Secretary, Transport, Ports and State Excise, Government of Maharashtra.\n\nHe received the state government’s Chinmulgund Award for Administrative Excellence in 1989. He sought voluntary retirement from government in 2008 and joined the private sector as CEO & MD, Khed Economic Infrastructure Pvt Ltd.\n\nDr. Jha has co-authored the books — Towards People Friendly Cities — published by UNICEF; Urban Essays, published by YASHADA and co-edited Perspectives in Urban Development, published by Capital Publishing Company. He has published a number of papers on a variety of urban subjects and has widely lectured on urban issues.",
       "Photo": "Dr. Ramnath Jha.png",
       "FullPath": "images/people/Dr. Ramnath Jha.png",
       "ParticipantCatagory": "Panelist",
@@ -3668,13 +3668,13 @@
       "Details": "",
       "Remarks": "",
       "df": "images/photo.png",
-      "author/co-author": ""
+      "author/co-author": "author"
     },
     {
       "SerialNumber": "",
       "Name": "Sakshi Gudwani",
       "Organization": "Gates Foundation",
-      "Designation": "Senior Program Officer",
+      "Designation": "Lead, WSH India-South Asia",
       "Bio": "Sakshi Gudwani works with the Gates Foundation as a Senior Program Officer and manages the Foundation’s Water, Sanitation & Hygiene (WSH) program in India. She has a diverse set of experiences that spans across private, public, and nonprofit sector work. She has been a development professional for over 10 years and focuses on policy & program design, institutional strengthening, and private sector engagement. At the Gates Foundation, Sakshi also worked with the Avahan program - Foundation’s flagship HIV prevention program in India. Before joining the Foundation, she worked with The Boston Consulting Group (BCG). At BCG, she was a part of multiple teams which counselled CEOs, government ministries and top management across industries on critical business problems. During this time, she worked across Social, Healthcare, Technology and Financial Services sectors. Sakshi has an engineering degree and is a management graduate of the Indian Institute of Management (IIM), Lucknow.",
       "Photo": "Sakshi Gudwani.png",
       "FullPath": "images/people/Sakshi Gudwani.png",
@@ -3895,7 +3895,7 @@
       "Name": "Silver Mugisha",
       "Organization": "National Water and Sewerage Corporation, Uganda",
       "Designation": "MD",
-      "Bio": "Dr. Eng. Silver Mugisha is the Managing Director of National Water and Sewerage Corporation (NWSC) Uganda, one for the well performing water and sanitation utilities in Africa.\r\nMugisha holds a Ph.D. in Engineering and Economics of Makerere University - Uganda; MSc in Sanitary Engineering (Sector Utility Management) from IHE Delft-Netherlands; and BSc. Civil Engineering - Makerere University - Uganda. His PhD research, which was carried out in collaboration with PURC of University of Florida, USA focused on areas of performance monitoring, incentive design and productivity analysis. \r\nDr. Mugisha brings over 30 years of industry leadership, organizational transformation expertise and excutive management experience to one of the well performing utilities in Africa.\r\nDr. Mugisha has worked and supported, organizational and performance improvement, for various organizations in Uganda, Kenya, Tanzania, Zambia, Nigeria, Ethiopia, Rwanda, India, and Trinidad and Tobago among others. \r\nDr Mugisha is very active in the water sector as well as in the community. He was a Board Member of the International Water Association (IWA), 2014-2016 and later become the Vice President of IWA (2016-2018).\r\n He is the President Emeritus of the African Water and Sanitation Association (AfWASA) (2020-2025). He is also the Chairman Emeritus of the following Boards; Governing Council of the Federation of Uganda Employers (FUE); Uganda Business and Technical Examinations Board (UBTEB), Uganda Technical College Bushenyi, and a Board member of Umeme Ltd (an electricity distributor).\r\n\r\nHe is currently a Board member of National Security Fund (NSSF), a registered engineer with Engineers Registration Board (ERB), and a member of Uganda Institute of Professional Engineers (UIPE). \r\nDr Mugisha is a Fellow of the International Water Association and Sense Research School of the Netherlands. He is the author of more than 50 peer reviewed papers, two books, and chapters of books published internationally.\r\nHe is very passionate about service delivery, knowledge and professional development. His leadership and commitment have been key in helping many water utilities especially in Africa on their drive towards water and sanitation for All.\r",
+      "Bio": "Dr. Eng. Silver Mugisha is the Managing Director of National Water and Sewerage Corporation (NWSC) Uganda, one for the well performing water and sanitation utilities in Africa.\nMugisha holds a Ph.D. in Engineering and Economics of Makerere University - Uganda; MSc in Sanitary Engineering (Sector Utility Management) from IHE Delft-Netherlands; and BSc. Civil Engineering - Makerere University - Uganda. His PhD research, which was carried out in collaboration with PURC of University of Florida, USA focused on areas of performance monitoring, incentive design and productivity analysis. \nDr. Mugisha brings over 30 years of industry leadership, organizational transformation expertise and excutive management experience to one of the well performing utilities in Africa.\nDr. Mugisha has worked and supported, organizational and performance improvement, for various organizations in Uganda, Kenya, Tanzania, Zambia, Nigeria, Ethiopia, Rwanda, India, and Trinidad and Tobago among others. \nDr Mugisha is very active in the water sector as well as in the community. He was a Board Member of the International Water Association (IWA), 2014-2016 and later become the Vice President of IWA (2016-2018).\n He is the President Emeritus of the African Water and Sanitation Association (AfWASA) (2020-2025). He is also the Chairman Emeritus of the following Boards; Governing Council of the Federation of Uganda Employers (FUE); Uganda Business and Technical Examinations Board (UBTEB), Uganda Technical College Bushenyi, and a Board member of Umeme Ltd (an electricity distributor).\n\nHe is currently a Board member of National Security Fund (NSSF), a registered engineer with Engineers Registration Board (ERB), and a member of Uganda Institute of Professional Engineers (UIPE). \nDr Mugisha is a Fellow of the International Water Association and Sense Research School of the Netherlands. He is the author of more than 50 peer reviewed papers, two books, and chapters of books published internationally.\nHe is very passionate about service delivery, knowledge and professional development. His leadership and commitment have been key in helping many water utilities especially in Africa on their drive towards water and sanitation for All.\n",
       "Photo": "Dr. Silver Mugisha.png",
       "FullPath": "images/people/Dr. Silver Mugisha.png",
       "ParticipantCatagory": "Keynote Speaker",
@@ -4132,12 +4132,12 @@
     },
     {
       "SerialNumber": "",
-      "Name": "Utkarsha Kavadi",
+      "Name": "Manish Karpe, Utkarsha Kavadi ",
       "Organization": "All India Institute of Local Self Government",
-      "Designation": "Senior Executive Director",
+      "Designation": "Research Associate",
       "Bio": "",
-      "Photo": "Utkarsha Kavadi.png",
-      "FullPath": "images/people/Utkarsha Kavadi.png",
+      "Photo": "Manish Karpe, Utkarsha Kavadi .png",
+      "FullPath": "images/people/Manish Karpe, Utkarsha Kavadi .png",
       "ParticipantCatagory": "Verbal Presenter",
       "SessionType": "",
       "SessionTitle": "",
@@ -4361,9 +4361,9 @@
     "description1": "The Center for Water and Sanitation (CWAS) at CRDF, CEPT University is organising the third edition of Global South Academic Conclave (GSAC) on WASH and Climate in February 2026. The previous two editions in 2024 and 2025 were immensely successful, where more than 2000 participants from over 250 organisations across 35 countries joined us at these conclaves.",
     "description2": "To continue these discussions, we have organised this third edition of GSAC on 6th–7th February 2026 at CEPT University campus in Ahmedabad. It is being organised in collaboration with the Faculty of Planning, CEPT University, and it is supported by the Viega Foundation and Gates Foundation. ",
     "description3": "The third edition of GSAC focuses on WASH Monitoring, Governance and Financing and WASH Innovations in the Global South. GSAC is visualised as a cross-learning event among sector partners, academia and researchers.",
-    "registrations": "650+",
+    "registrations": "700+",
     "speakers": "140+",
-    "countries": "43+",
+    "countries": "45+",
     "organizations": "250+",
     "registration_link": "https://docs.google.com/forms/d/e/1FAIpQLSe52KU-jwnjrkPqK6DK2I4KCRIGxYu0udLInFEpKEbDVPbjjA/viewform",
     "theme1": "Monitoring WASH and climate",
