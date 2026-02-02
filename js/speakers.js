@@ -87,7 +87,7 @@ export function loadSpeakers() {
                                         <h3>${speaker.Name}</h3>
                                         <h4 style="font-weight: normal;">${speaker.Designation || ""} | ${speaker.Organization || ""}</h4>
                                         <p style ="display:none"> ${speaker.Bio || "No biography available."} </p>
-                                        <h5>${getSessions(speaker.SessionTitle, speaker.Topic, speaker.Day, speaker.Time, speaker.Venue)} </h5>
+                                        <h5 style ="display:none">${getSessions(speaker.SessionTitle, speaker.Topic, speaker.Day, speaker.Time, speaker.Venue)} </h5>
                                     </div>
                                 </div>
                             </section>
