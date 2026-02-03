@@ -1260,7 +1260,7 @@
       "Date": "6-Feb-2026",
       "Time": "11:15 - 12:15",
       "Session": "Panel Discussion - Data driven actions and innovations for WASH and Climate Change ",
-      "Speaker": "Moderator: Sakshi Gudwani, Gates Foundation, India <br>\n•        S.M. Vijayanand (Retd. IAS), India <br>\n•        Dinesh Mehta, CWAS, CRDF-CEPT University, India  <br>\n•        Alejandro Jimenez, IVL, Sweden <br>\n•        Abdu Maliki Muyinda, ESAWAS, Uganda <br>\n•        Manvita Baradi, UMC, India <br>\n",
+      "Speaker": "Moderator: Sakshi Gudwani, Gates Foundation, India <br>\n•        Abdu Maliki Muyinda, ESAWAS, Uganda <br>\n•        Alejandro Jimenez, IVL, Sweden <br>\n•        Dinesh Mehta, CWAS, CRDF-CEPT University, India  <br>\n•        Manvita Baradi, UMC, India <br>\n•        S.M. Vijayanand (Retd. IAS), India\n",
       "Venue": "BNB Hall",
       "Class": 2
     },
@@ -1290,7 +1290,7 @@
       "Date": "6-Feb-2026",
       "Time": "14:00 - 15:00",
       "Session": "Panel Discussion - Water, Climate and Gender",
-      "Speaker": "Moderator: Aasim Mansuri, CWAS, CRDF-CEPT University, India <br>\n•        Neeta Pokhrel, ADB, Philippines  <br>\n•        Jane Nabunnya Mulumba, IRC, Uganda  <br>\n•        Nitin Bassi, CEEW, India  <br>\n•        Bijal Brahmbhatt, MHT, India  <br>\n•        Pallavi Sobti-Rajpal, Utthan, India  \n ",
+      "Speaker": "Moderator: Aasim Mansuri, CWAS, CRDF-CEPT University, India <br>\n•        Bijal Brahmbhatt, MHT, India  <br>\n•        Jane Nabunnya Mulumba, IRC, Uganda  <br>\n•        Neeta Pokhrel, ADB, Philippines  <br>\n•        Nitin Bassi, CEEW, India  <br>\n•        Pallavi Sobti-Rajpal, Utthan, India  \n ",
       "Venue": "BNB Hall",
       "Class": 2
     },
@@ -1300,7 +1300,7 @@
       "Date": "6-Feb-2026",
       "Time": "15:00 - 15:45",
       "Session": "Keynote Address 3 - Patrick Moriarty, IRC, Netherlands",
-      "Speaker": "Introduction - Dhruv Bhavsar, CRDF-CEPT University, India",
+      "Speaker": "Introduction - Dhruv Bhavsar, CWAS, CRDF-CEPT University, India",
       "Venue": "BNB Hall",
       "Class": 2
     },
@@ -1330,7 +1330,7 @@
       "Date": "6-Feb-2026",
       "Time": "16:00 - 17:30 ",
       "Session": "Technical Sessions 2 - “Governance and Financing for inclusive and climate resilient WASH”",
-      "Speaker": "Chaired by:\nSaswat Bandyopadhyay, FP CEPT\n",
+      "Speaker": "Chaired by:\nUpasana Yadav, CWAS, CRDF-CEPT University\n",
       "Venue": "FA-101a",
       "Class": 2
     },
@@ -1340,7 +1340,7 @@
       "Date": "6-Feb-2026",
       "Time": "16:00 - 17:30 ",
       "Session": "Technical Sessions 3 - “WASH innovations in technology and service delivery”",
-      "Speaker": "Chaired by:\nAditi Dwivedi, CWAS, CRDF-CEPT University",
+      "Speaker": "Chaired by:\r\nJignesh Mehta, FP CEPT\r",
       "Venue": "Sagara Basement",
       "Class": 2
     },
@@ -1350,7 +1350,7 @@
       "Date": "6-Feb-2026",
       "Time": "16:00 - 17:30 ",
       "Session": "Technical Session 4 - “WASH innovations in technology and service delivery”\r\n",
-      "Speaker": "Chaired by:\r\nJignesh Mehta, FP CEPT\r",
+      "Speaker": "Chaired by:\nAditi Dwivedi, CWAS, CRDF-CEPT University",
       "Venue": "FP Audi",
       "Class": ""
     },
@@ -1369,7 +1369,7 @@
       "Day": 1,
       "Date": "6-Feb-2026",
       "Time": "17:30 - 19:00",
-      "Session": "Partner Session 1 - \"Sanitation for Climate Resilience and Inclusion: Securing Water Systems in a \n Changing Climate\"",
+      "Session": "Partner Session 1 - \"Sanitation for Climate Resilience and Inclusion: Securing Water Systems in a  Changing Climate\"",
       "Speaker": "NFSSM and Climate Rise Alliance",
       "Venue": "BNB Hall",
       "Class": ""
@@ -1390,7 +1390,7 @@
       "Date": "6-Feb-2026",
       "Time": "17:30 - 19:00",
       "Session": "Partner Session 3 - \"Kutch Partners Meet: Advancing Last-Mile Access to Safe Drinking Water \" \n",
-      "Speaker": "DASRA",
+      "Speaker": "DASRA  (closed room discussion)",
       "Venue": "FA 101a",
       "Class": 1
     },
@@ -1400,7 +1400,7 @@
       "Date": "6-Feb-2026",
       "Time": "17:30 - 19:00",
       "Session": "Partner Session 4 - \"Women in Water and Sanitation: Leadership, Pathways and Practice\"",
-      "Speaker": "ABD in collaboration with CWAS (closed room discussion)",
+      "Speaker": "ADB in collaboration with CWAS",
       "Venue": "FP Audi",
       "Class": 1
     },
@@ -1450,7 +1450,7 @@
       "Date": "7-Feb-2026",
       "Time": "9:15 - 10:00 ",
       "Session": "Keynote Address 4 - Aloka Majumdar, HSBC, India",
-      "Speaker": "Introduction - Dinesh Mehta, CRDF-CEPT University, India",
+      "Speaker": "Introduction - Dinesh Mehta, CWAS, CRDF-CEPT University, India",
       "Venue": "Sagara Basement",
       "Class": 2
     },
@@ -1459,8 +1459,8 @@
       "Day": 2,
       "Date": "7-Feb-2026",
       "Time": "10:00 - 11:00",
-      "Session": "Panel Discussion - Governance and financing (Impact Investing) for climate resilient and inclusive WASH",
-      "Speaker": "Moderator: Dhruv Bhavsar, CWAS, CRDF-CEPT University, India <br>\r\n•\tMeera Mehta, CWAS, CRDF-CEPT University, India <br>\r\n•\tHamanth Kasan, IWA, South Africa <br>\r\n•\tHarish Ahuja, Social Stock Exchange, India <br>\r\n•\tNeha Kumar, Climate Bonds Initiative, India <br>\r\n•\tAparna Dua, Blended Finance Company, India",
+      "Session": "Panel Discussion - Governance and financing for climate resilient and inclusive WASH",
+      "Speaker": "Moderator: Dhruv Bhavsar, CWAS, CRDF-CEPT University, India <br>\n•        Aparna Dua, Blended Finance Company, India <br>\n•        Hamanth Kasan, IWA, South Africa <br>\n•        Harish Ahuja, Social Stock Exchange, India <br>\n•        Meera Mehta, CWAS, CRDF-CEPT University, India <br>\n•        Neha Kumar, Climate Bonds Initiative, India <br>\n",
       "Venue": "Sagara Basement",
       "Class": 2
     },
@@ -1470,7 +1470,7 @@
       "Date": "7-Feb-2026",
       "Time": "11:00 - 11:45 ",
       "Session": "Keynote Address 5 - Osward Chanda, Former AfDB, Côte d'Ivoire",
-      "Speaker": "Introduction - Meera Mehta, CRDF-CEPT University, India",
+      "Speaker": "Introduction - Meera Mehta, CWAS, CRDF-CEPT University, India",
       "Venue": "Sagara Basement",
       "Class": 2
     },
@@ -1480,7 +1480,7 @@
       "Date": "7-Feb-2026",
       "Time": "11:45 - 12:45",
       "Session": "Panel Discussion - Academic discourse on WASH climate and urban planning",
-      "Speaker": "Moderator:  Mona Iyer, Faculty of Planning-CEPT, India <br>\n•        Kalimuthu Arumugam Pillai, WASH-I, India  <br>\n•        Rajul Gajjar, Gujarat Technological University, India  <br>\n•        Meenakshi Arora, University of Melbourne, Australia  <br>\n•        Jagath Munasinghe, University of Moratuwa, Sri Lanka   <br>\n",
+      "Speaker": "Moderator:  Mona Iyer, Faculty of Planning-CEPT, India <br>\n•        Jagath Munasinghe, University of Moratuwa, Sri Lanka   <br>\n•        Kalimuthu Arumugam Pillai, WASH-I, India  <br>\n•        Meenakshi Arora, University of Melbourne, Australia  <br>\n•        Rajul Gajjar, Gujarat Technological University, India \n\n",
       "Venue": "Sagara Basement",
       "Class": 2
     },
@@ -1500,7 +1500,7 @@
       "Date": "7-Feb-2026",
       "Time": "13:45 - 14:30",
       "Session": "Key Note Address 6 - Kate Medlicott, WHO, Switzerland",
-      "Speaker": "Introduction - Arwa Bharmal, CRDF-CEPT University, India",
+      "Speaker": "Introduction - Arwa Bharmal, CWAS, CRDF-CEPT University, India",
       "Venue": "Sagara Basement",
       "Class": 2
     },
@@ -1520,7 +1520,7 @@
       "Date": "7-Feb-2026",
       "Time": "14:30 - 16:00",
       "Session": "Technical Sessions 2 - “Governance and Financing for inclusive and climate resilient WASH”",
-      "Speaker": "Chaired by:\nUpasana Yadav, CWAS, CRDF-CEPT University\n",
+      "Speaker": "Chaired by:\nSaswat Bandyopadhyay, FP CEPT\n",
       "Venue": "FA-101a",
       "Class": 2
     },
