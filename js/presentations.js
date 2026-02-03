@@ -53,7 +53,7 @@ export function loadPresentations() {
                                                     <h3 class="session-title">${presentation['Poster Name']}</h3>
                                                     <div class="groupPresenter">
                                                         <p><strong>Author:</strong> ${presentation['Author Name']}</p>
-                                                        <p><strong>Co-Authors:</strong> ${presentation['CoAuthor']}</p>
+                                                   <!--     <p><strong>Co-Authors:</strong> ${presentation['CoAuthor']}</p>  -->
                                                         <p><strong>Organization:</strong> ${presentation['Organization']}</p>
                                                     </div>
                                                 </div>

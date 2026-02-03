@@ -104,7 +104,7 @@ export function loadHome() {
             return htmlContent;
         })
         .catch((error) => {
-            return `<div class="error-message">Please wait 5 second and reload the page again</div>`;
+            return `<div class="error-message">Please wait........and reload the page again</div>`;
         });
 }
 
