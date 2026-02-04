@@ -7,119 +7,108 @@ export function loadPresentations() {
             return response.json();
         })
         .then(data => {
-            const { poster } = data;  
+            const { poster } = data;
 
             if (!poster || !Array.isArray(poster)) {
                 throw new Error('Invalid API response format.');
             }
 
-            const groupedByCategory = poster.reduce((acc, presentation) => {
-                const category = presentation['Category'];
-                if (!acc[category]) acc[category] = {};
+            // Group: Category → Day → Theme → Time
+            const grouped = poster.reduce((acc, p) => {
+                const { Category, Day, Theme, Time } = p;
+
+                acc[Category] ??= {};
+                acc[Category][Day] ??= {};
+                acc[Category][Day][Theme] ??= {};
+                acc[Category][Day][Theme][Time] ??= [];
+
+                acc[Category][Day][Theme][Time].push(p);
                 return acc;
             }, {});
 
-            poster.forEach(presentation => {
-                const category = presentation['Category'];
-                const day = presentation['Day'];
-                if (!groupedByCategory[category][day]) {
-                    groupedByCategory[category][day] = {};
-                }
-                const theme = presentation['Theme'];
-                if (!groupedByCategory[category][day][theme]) {
-                    groupedByCategory[category][day][theme] = [];
-                }
-                groupedByCategory[category][day][theme].push(presentation);
-            });
+            // Build HTML
+            const sections = Object.keys(grouped).map(category => {
+                const dayBlocks = Object.keys(grouped[category]).map(day => {
+                    const themeBlocks = Object.keys(grouped[category][day]).map(theme => {
 
-            const presentationsSections = Object.keys(groupedByCategory).map(category => {
-                const categorySection = Object.keys(groupedByCategory[category]).map(day => {
-                    const daySection = Object.keys(groupedByCategory[category][day]).map(theme => {
-                        const themeList = groupedByCategory[category][day][theme];
+                        const timeBlocks = Object.keys(grouped[category][day][theme]).map(time => {
+                            const presentations = grouped[category][day][theme][time];
+                            const venue = presentations[0].Venue; // only once
+                            const sessiontype = presentations[0].SessionType; // only once
+
+                            return `
+                                <div class="time-cluster">
+                                    <!-- LEFT: TIME + LOCATION -->
+                                    <div class="time-box">
+                                    <p class="time">${sessiontype}</p>
+                                        <p class="time">${time}</p>
+                                        <p class="venue">
+                                            <i class="fas fa-map-marker-alt"></i> ${venue}
+                                        </p>
+                                    </div>
+
+                                    <!-- RIGHT: PRESENTATIONS -->
+                                    <div class="time-sessions">
+                                        ${presentations.map(p => `
+                                            <section class="agenda-box" id="presentation-${p['Sr.No.']}">
+                                                <div class="session-card">
+                                                    <div class="session-content">
+                                                        <h3 class="session-title">${p['Poster Name']}</h3>
+                                                        <div class="groupPresenter">
+                                                            <p><strong>Author:</strong> ${p['Author Name']}</p>
+                                                            <p><strong>Organization:</strong> ${p['Organization']}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        `).join('')}
+                                    </div>
+                                </div>
+                            `;
+                        }).join('');
+
                         return `
                             <div class="ribbon3">
                                 <p>${theme}</p>
                             </div>
-                            <div class="day-sessions" id="category-${category.replace(/\s+/g, '-')}-day-${day}-theme-${theme.replace(/\s+/g, '-')}">
-                                ${themeList.map(presentation => {
-                                    return `
-                                        <section class="agenda-box" id="presentation-${presentation['Sr.No.']}">
-                                            <div class="session-card">
-                                                <div class="session-time">
-                                                    <p>${presentation.Time}</p>
-                                                    <p><i class="fas fa-map-marker-alt"></i>${presentation.Venue}</p>
-                                                </div>
-                                                <div class="session-content">
-                                                    <h3 class="session-title">${presentation['Poster Name']}</h3>
-                                                    <div class="groupPresenter">
-                                                        <p><strong>Author:</strong> ${presentation['Author Name']}</p>
-                                                   <!--     <p><strong>Co-Authors:</strong> ${presentation['CoAuthor']}</p>  -->
-                                                        <p><strong>Organization:</strong> ${presentation['Organization']}</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                    `;
-                                }).join('')}
-                            </div>
+                            ${timeBlocks}
                         `;
                     }).join('');
+
                     return `
                         <div class="ribbon2">
                             <p>${day}</p>
                         </div>
-                        ${daySection}
+                        ${themeBlocks}
                     `;
                 }).join('');
+
                 return `
                     <div class="ribbon" id="category-${category.replace(/\s+/g, '-')}">
                         <p>${category}</p>
                     </div>
-                    ${categorySection}
+                    ${dayBlocks}
                 `;
             }).join('');
 
-            const searchSection = `
-                <section class="search-section" id="searchSection">
-                    <input type="text" id="searchInput" placeholder="Search for presentations..." />
-                    <button id="searchButton">Search</button>
-                    <button style="display:none" id="searchClose">
-                        <i class="fas fa-close"></i>
-                    </button>
-                </section>
-            `;
-            
-            const categoryButtons = Object.keys(groupedByCategory).map(category => {
-                let icon = "<i class='fas fa-rectangle-list'></i>";
-                if (category.toLowerCase() === "verbal presentation") {
-                    icon = "<i class='fas fa-microphone-alt'></i>";
-                }
-                return `<button class="nav-button" data-category="${category.replace(/\s+/g, '-')}">${icon} ${category}</button>`;
-            }).join('');
-            
-            const navPanel = `
-                <nav id="navigation-footer" class="navigation-panel">
-                    ${categoryButtons}
-                </nav>
-            `;
-            
-            return navPanel + searchSection + presentationsSections;
+            // Return full HTML
+            return sections;
         })
         .catch(error => {
             console.error('Error loading presentations data:', error);
-            return `<div class="error-message">Please reload the page: ${error.message}</div>`;
+            return `<div class="error-message">${error.message}</div>`;
         });
 }
 
-// Global event delegation for search and navigation
-
+// Global Event Delegation for Navigation & Search
 document.addEventListener('click', (event) => {
     const button = event.target.closest('.nav-button');
     if (button) {
-        const category = button.getAttribute('data-category');
+        const category = button.dataset.category;
         const targetSection = document.querySelector(`#category-${category}`);
         document.querySelectorAll('.nav-button').forEach(btn => btn.classList.remove("active"));
         button.classList.add("active");
+
         if (targetSection) {
             setTimeout(() => {
                 window.scrollTo({
@@ -131,19 +120,19 @@ document.addEventListener('click', (event) => {
     }
 
     if (event.target.id === 'searchButton') {
-        const searchInput = document.getElementById('searchInput');
-        const allPresentationCards = document.querySelectorAll(".session-card");
+        const query = document.getElementById('searchInput').value.toLowerCase().trim();
         document.getElementById("searchButton").style.display = "none";
         document.getElementById("searchClose").style.display = "block";
-        const query = searchInput.value.toLowerCase().trim();
-        allPresentationCards.forEach(card => {
-            const title = card.querySelector(".session-title").textContent.toLowerCase();
-            const author = card.querySelector(".groupPresenter p").textContent.toLowerCase();
+
+        document.querySelectorAll(".session-card").forEach(card => {
+            const title = card.querySelector(".session-title")?.textContent.toLowerCase() || '';
+            const author = card.querySelector(".groupPresenter p")?.textContent.toLowerCase() || '';
             card.style.display = (title.includes(query) || author.includes(query)) ? "flex" : "none";
         });
     }
+
     if (event.target.id === 'searchClose') {
-        document.getElementById('searchInput').value = "";
+        document.getElementById('searchInput').value = '';
         document.getElementById('searchButton').style.display = 'block';
         document.getElementById('searchClose').style.display = 'none';
         document.querySelectorAll(".session-card").forEach(card => card.style.display = 'flex');
