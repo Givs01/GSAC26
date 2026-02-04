@@ -13,7 +13,10 @@ export function loadPresentations() {
                 throw new Error('Invalid API response format.');
             }
 
-            // Group: Category → Day → Theme → SessionType → Time
+            // ==================================================
+            // GROUP DATA
+            // Category → Day → Theme → SessionType → Time
+            // ==================================================
             const grouped = poster.reduce((acc, p) => {
                 const { Category, Day, Theme, SessionType, Time } = p;
 
@@ -27,28 +30,66 @@ export function loadPresentations() {
                 return acc;
             }, {});
 
-            // Build HTML
+            // ==================================================
+            // NAVIGATION PANEL
+            // ==================================================
+            const navButtons = Object.keys(grouped).map(category => `
+                <button class="nav-button" data-category="${category.replace(/\s+/g, '-')}">
+                    <i class="fas fa-list"></i>
+                    <span>${category}</span>
+                </button>
+            `).join('');
+
+            const navPanel = `
+                <nav id="navigation-footer" class="navigation-panel">
+                    ${navButtons}
+                </nav>
+            `;
+
+            // ==================================================
+            // SEARCH SECTION
+            // ==================================================
+            const searchSection = `
+                <section class="search-section" id="searchSection">
+                    <input type="text" id="searchInput" placeholder="Search sessions, authors, organizations..." />
+                    <button id="searchButton">Search</button>
+                    <button id="searchClose" style="display:none;">
+                        <i class="fas fa-close"></i>
+                    </button>
+                </section>
+            `;
+
+            const noResults = `
+                <div id="noResults" class="no-results" style="display:none;">
+                    <p>No results found</p>
+                </div>
+            `;
+
+            // ==================================================
+            // BUILD HTML
+            // ==================================================
             const sections = Object.keys(grouped).map(category => {
                 const dayBlocks = Object.keys(grouped[category]).map(day => {
                     const themeBlocks = Object.keys(grouped[category][day]).map(theme => {
-                        // Build sessions grouped by SessionType → Time
+
                         const sessionBlocks = Object.keys(grouped[category][day][theme]).map(sessionType => {
                             return Object.keys(grouped[category][day][theme][sessionType]).map(time => {
-                                const presentations = grouped[category][day][theme][sessionType][time];
+
+                                const presentations =
+                                    grouped[category][day][theme][sessionType][time];
+
                                 const venue = presentations[0].Venue || '';
 
                                 return `
                                     <div class="time-cluster">
-                                        <!-- LEFT: TIME + LOCATION -->
                                         <div class="time-box">
-                                            <p class="time">${sessionType}</p>
+                                            <p class="time session-type">${sessionType}</p>
                                             <p class="time">${time}</p>
                                             <p class="venue">
                                                 <i class="fas fa-map-marker-alt"></i> ${venue}
                                             </p>
                                         </div>
 
-                                        <!-- RIGHT: PRESENTATIONS -->
                                         <div class="time-sessions">
                                             ${presentations.map(p => `
                                                 <section class="agenda-box" id="presentation-${p['Sr.No.']}">
@@ -69,21 +110,18 @@ export function loadPresentations() {
                             }).join('');
                         }).join('');
 
-                        // Theme ribbon once per theme
                         return `
                             <div class="ribbon3"><p>${theme || 'No Theme'}</p></div>
                             ${sessionBlocks}
                         `;
                     }).join('');
 
-                    // Day ribbon once per day
                     return `
                         <div class="ribbon2"><p>${day}</p></div>
                         ${themeBlocks}
                     `;
                 }).join('');
 
-                // Category ribbon
                 return `
                     <div class="ribbon" id="category-${category.replace(/\s+/g, '-')}">
                         <p>${category}</p>
@@ -92,53 +130,97 @@ export function loadPresentations() {
                 `;
             }).join('');
 
-            return sections;
+            return navPanel + searchSection + noResults + sections;
         })
         .catch(error => {
-            console.error('Error loading presentations data:', error);
+            console.error(error);
             return `<div class="error-message">${error.message}</div>`;
         });
 }
 
-// Global Event Delegation for Navigation & Search
-document.addEventListener('click', (event) => {
-    const button = event.target.closest('.nav-button');
-    if (button) {
-        const category = button.dataset.category;
-        const targetSection = document.querySelector(`#category-${category}`);
-        document.querySelectorAll('.nav-button').forEach(btn => btn.classList.remove("active"));
-        button.classList.add("active");
+/* ======================================================
+   GLOBAL EVENT HANDLERS
+   ====================================================== */
 
-        if (targetSection) {
-            setTimeout(() => {
-                window.scrollTo({
-                    top: targetSection.offsetTop - 90,
-                    behavior: "smooth"
-                });
-            }, 100);
+document.addEventListener('click', (event) => {
+
+    // ---------------- NAVIGATION ----------------
+    const navBtn = event.target.closest('.nav-button');
+    if (navBtn) {
+        const category = navBtn.dataset.category;
+        const target = document.getElementById(`category-${category}`);
+
+        document.querySelectorAll('.nav-button')
+            .forEach(btn => btn.classList.remove('active'));
+
+        navBtn.classList.add('active');
+
+        if (target) {
+            window.scrollTo({
+                top: target.offsetTop - 90,
+                behavior: 'smooth'
+            });
         }
     }
 
-    if (event.target.id === 'searchButton') {
-        const query = document.getElementById('searchInput').value.toLowerCase().trim();
-        document.getElementById("searchButton").style.display = "none";
-        document.getElementById("searchClose").style.display = "block";
+    // ---------------- SEARCH ----------------
+    const searchBtn = event.target.closest('#searchButton');
+    if (searchBtn) {
+        const query = document.getElementById('searchInput')
+            .value.toLowerCase().trim();
 
-        document.querySelectorAll(".session-card").forEach(card => {
-            const title = card.querySelector(".session-title")?.textContent.toLowerCase() || '';
-            const author = card.querySelector(".groupPresenter p")?.textContent.toLowerCase() || '';
-            card.style.display = (title.includes(query) || author.includes(query)) ? "flex" : "none";
+        const cards = document.querySelectorAll('.session-card');
+        let matches = 0;
+
+        cards.forEach(card => {
+            const text = [
+                card.querySelector('.session-title')?.textContent,
+                card.querySelector('.groupPresenter')?.textContent,
+                card.closest('.time-cluster')?.textContent
+            ]
+                .filter(Boolean)
+                .join(' ')
+                .toLowerCase();
+
+            const show = text.includes(query);
+            card.style.display = show ? 'flex' : 'none';
+            if (show) matches++;
         });
+
+        document.querySelectorAll('.time-cluster').forEach(cluster => {
+            cluster.style.display =
+                cluster.querySelector('.session-card[style*="flex"]')
+                    ? 'flex'
+                    : 'none';
+        });
+
+        document.getElementById('noResults').style.display =
+            matches === 0 ? 'flex' : 'none';
+
+        document.getElementById('searchButton').style.display = 'none';
+        document.getElementById('searchClose').style.display = 'flex';
     }
 
-    if (event.target.id === 'searchClose') {
+    // ---------------- RESET SEARCH ----------------
+    const closeBtn = event.target.closest('#searchClose');
+    if (closeBtn) {
         document.getElementById('searchInput').value = '';
-        document.getElementById('searchButton').style.display = 'block';
+        document.getElementById('searchButton').style.display = 'flex';
         document.getElementById('searchClose').style.display = 'none';
-        document.querySelectorAll(".session-card").forEach(card => card.style.display = 'flex');
+        document.getElementById('noResults').style.display = 'none';
+
+        document.querySelectorAll('.session-card')
+            .forEach(card => card.style.display = 'flex');
+
+        document.querySelectorAll('.time-cluster')
+            .forEach(cluster => cluster.style.display = 'flex');
+
+        document.querySelectorAll('.ribbon, .ribbon2, .ribbon3')
+            .forEach(r => r.style.display = 'flex');
     }
 });
 
+// ---------------- ENTER KEY SUPPORT ----------------
 document.addEventListener('keydown', (event) => {
     if (event.key === 'Enter' && document.activeElement.id === 'searchInput') {
         document.getElementById('searchButton').click();
