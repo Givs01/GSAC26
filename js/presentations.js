@@ -13,6 +13,8 @@ export function loadPresentations() {
                 throw new Error('Invalid API response format.');
             }
 
+            
+
             // ==================================================
             // GROUP DATA
             // Category → Day → Theme → SessionType → Time
@@ -33,12 +35,17 @@ export function loadPresentations() {
             // ==================================================
             // NAVIGATION PANEL
             // ==================================================
-            const navButtons = Object.keys(grouped).map(category => `
-                <button class="nav-button" data-category="${category.replace(/\s+/g, '-')}">
-                    <i class="fas fa-list"></i>
-                    <span>${category}</span>
-                </button>
-            `).join('');
+            const navButtons = Object.keys(grouped).map(category => {
+                const icon = getCategoryIcon(category);
+
+                return `
+                    <button class="nav-button" data-category="${category.replace(/\s+/g, '-')}">
+                        <i class="fas ${icon}"></i>
+                        <span>${category}</span>
+                    </button>
+                `;
+            }).join('');
+
 
             const navPanel = `
                 <nav id="navigation-footer" class="navigation-panel">
@@ -137,6 +144,17 @@ export function loadPresentations() {
             return `<div class="error-message">${error.message}</div>`;
         });
 }
+
+const getCategoryIcon = (category) => {
+    const c = category.toLowerCase();
+
+    if (c.includes('oral') || c.includes('verbal')) return 'fa-microphone';
+    if (c.includes('poster')) return 'fa-rectangle-list';
+
+    // fallback
+    return 'fa-layer-group';
+};
+
 
 /* ======================================================
    GLOBAL EVENT HANDLERS
