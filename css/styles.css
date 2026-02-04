@@ -1467,7 +1467,7 @@ iframe {
     display: grid;
     grid-template-columns: 80px 1fr;
     gap: 4px;
-    margin:4px;
+    margin:8px;
     align-items: stretch;
 }
 

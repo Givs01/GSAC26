@@ -13,16 +13,17 @@ export function loadPresentations() {
                 throw new Error('Invalid API response format.');
             }
 
-            // Group: Category → Day → Theme → Time
+            // Group: Category → Day → Theme → SessionType → Time
             const grouped = poster.reduce((acc, p) => {
-                const { Category, Day, Theme, Time } = p;
+                const { Category, Day, Theme, SessionType, Time } = p;
 
                 acc[Category] ??= {};
                 acc[Category][Day] ??= {};
                 acc[Category][Day][Theme] ??= {};
-                acc[Category][Day][Theme][Time] ??= [];
+                acc[Category][Day][Theme][SessionType] ??= {};
+                acc[Category][Day][Theme][SessionType][Time] ??= [];
 
-                acc[Category][Day][Theme][Time].push(p);
+                acc[Category][Day][Theme][SessionType][Time].push(p);
                 return acc;
             }, {});
 
@@ -30,59 +31,59 @@ export function loadPresentations() {
             const sections = Object.keys(grouped).map(category => {
                 const dayBlocks = Object.keys(grouped[category]).map(day => {
                     const themeBlocks = Object.keys(grouped[category][day]).map(theme => {
+                        // Build sessions grouped by SessionType → Time
+                        const sessionBlocks = Object.keys(grouped[category][day][theme]).map(sessionType => {
+                            return Object.keys(grouped[category][day][theme][sessionType]).map(time => {
+                                const presentations = grouped[category][day][theme][sessionType][time];
+                                const venue = presentations[0].Venue || '';
 
-                        const timeBlocks = Object.keys(grouped[category][day][theme]).map(time => {
-                            const presentations = grouped[category][day][theme][time];
-                            const venue = presentations[0].Venue; // only once
-                            const sessiontype = presentations[0].SessionType; // only once
+                                return `
+                                    <div class="time-cluster">
+                                        <!-- LEFT: TIME + LOCATION -->
+                                        <div class="time-box">
+                                            <p class="time">${sessionType}</p>
+                                            <p class="time">${time}</p>
+                                            <p class="venue">
+                                                <i class="fas fa-map-marker-alt"></i> ${venue}
+                                            </p>
+                                        </div>
 
-                            return `
-                                <div class="time-cluster">
-                                    <!-- LEFT: TIME + LOCATION -->
-                                    <div class="time-box">
-                                    <p class="time">${sessiontype}</p>
-                                        <p class="time">${time}</p>
-                                        <p class="venue">
-                                            <i class="fas fa-map-marker-alt"></i> ${venue}
-                                        </p>
-                                    </div>
-
-                                    <!-- RIGHT: PRESENTATIONS -->
-                                    <div class="time-sessions">
-                                        ${presentations.map(p => `
-                                            <section class="agenda-box" id="presentation-${p['Sr.No.']}">
-                                                <div class="session-card">
-                                                    <div class="session-content">
-                                                        <h3 class="session-title">${p['Poster Name']}</h3>
-                                                        <div class="groupPresenter">
-                                                            <p><strong>Author:</strong> ${p['Author Name']}</p>
-                                                            <p><strong>Organization:</strong> ${p['Organization']}</p>
+                                        <!-- RIGHT: PRESENTATIONS -->
+                                        <div class="time-sessions">
+                                            ${presentations.map(p => `
+                                                <section class="agenda-box" id="presentation-${p['Sr.No.']}">
+                                                    <div class="session-card">
+                                                        <div class="session-content">
+                                                            <h3 class="session-title">${p['Poster Name']}</h3>
+                                                            <div class="groupPresenter">
+                                                                <p><strong>Author:</strong> ${p['Author Name']}</p>
+                                                                <p><strong>Organization:</strong> ${p['Organization']}</p>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </section>
-                                        `).join('')}
+                                                </section>
+                                            `).join('')}
+                                        </div>
                                     </div>
-                                </div>
-                            `;
+                                `;
+                            }).join('');
                         }).join('');
 
+                        // Theme ribbon once per theme
                         return `
-                            <div class="ribbon3">
-                                <p>${theme}</p>
-                            </div>
-                            ${timeBlocks}
+                            <div class="ribbon3"><p>${theme || 'No Theme'}</p></div>
+                            ${sessionBlocks}
                         `;
                     }).join('');
 
+                    // Day ribbon once per day
                     return `
-                        <div class="ribbon2">
-                            <p>${day}</p>
-                        </div>
+                        <div class="ribbon2"><p>${day}</p></div>
                         ${themeBlocks}
                     `;
                 }).join('');
 
+                // Category ribbon
                 return `
                     <div class="ribbon" id="category-${category.replace(/\s+/g, '-')}">
                         <p>${category}</p>
@@ -91,7 +92,6 @@ export function loadPresentations() {
                 `;
             }).join('');
 
-            // Return full HTML
             return sections;
         })
         .catch(error => {
