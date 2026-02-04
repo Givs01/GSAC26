@@ -1465,9 +1465,9 @@ iframe {
 
 .time-cluster {
     display: grid;
-    grid-template-columns: 90px 1fr;
+    grid-template-columns: 80px 1fr;
     gap: 4px;
-    margin:8px;
+    margin:4px;
     margin-bottom: 16px;
     align-items: stretch;
 }
